@@ -1,0 +1,70 @@
+{
+  "Header": {
+    "logo": "Shiftly",
+    "features": "Features",
+    "earlyAccess": "Early Access",
+    "cta": "Book a Discovery Call"
+  },
+  "Hero": {
+    "title": "Build staff schedules in a few clicks, not hours.",
+    "subtitle": "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, employee preferences, and real-world constraints.",
+    "cta": "Book a Discovery Call",
+    "secondaryCta": "See how it works",
+    "supporting": "Built for healthcare teams managing complex shift schedules."
+  },
+  "Problem": {
+    "title": "Scheduling is still manual, slow, and stressful.",
+    "description": "Healthcare teams spend hours every week building staff schedules. Managing availability, vacations, sick calls and legal constraints makes scheduling complex and error-prone.",
+    "bullet1": "Hours lost every week on manual planning.",
+    "bullet2": "Last-minute changes and constant adjustments.",
+    "bullet3": "Stressful sick call management.",
+    "bullet4": "Risk of mistakes and unfair schedules."
+  },
+  "Solution": {
+    "title": "Meet Shiftly",
+    "description": "Shiftly automatically generates optimal staff schedules in a few clicks — taking into account legal rules, team balance and employee preferences. No spreadsheets. No guesswork. No wasted time."
+  },
+  "Features": {
+    "title": "Built for real-world healthcare scheduling",
+    "feature1Title": "Automatic schedule generation",
+    "feature1Description": "Create complete staff schedules in a few clicks.",
+    "feature2Title": "Smart sick call handling",
+    "feature2Description": "Quickly find replacements or regenerate the schedule.",
+    "feature3Title": "Fair workload distribution",
+    "feature3Description": "Balance shifts across your team.",
+    "feature4Title": "Rule-based planning",
+    "feature4Description": "Respect legal requirements and internal policies.",
+    "feature5Title": "Simple export & sharing",
+    "feature5Description": "Download schedules as PDF and share them with your team."
+  },
+  "Differentiation": {
+    "title": "Built by people who actually did the job",
+    "description": "Shiftly was created by people who managed real teams and experienced the frustration of manual scheduling. We built Shiftly to eliminate hours of repetitive work and make scheduling simple, fair and efficient."
+  },
+  "BrandStatement": {
+    "title": "We build software for the people who care for others",
+    "description": "Shiftly exists to simplify workforce scheduling so healthcare teams can focus on what truly matters: caring for people."
+  },
+  "EarlyAccess": {
+    "title": "We are looking for early partners",
+    "description": "We are currently working with a limited number of healthcare teams to test and improve Shiftly. Join as an early partner and help shape the future of staff scheduling.",
+    "cta": "Book a Discovery Call"
+  },
+  "FinalCTA": {
+    "title": "Ready to simplify your scheduling?",
+    "cta": "Book a Discovery Call"
+  },
+  "Footer": {
+    "brand": "Shiftly",
+    "tagline": "Smart staff scheduling for healthcare teams.",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
+  },
+  "LanguageSwitcher": {
+    "en": "EN",
+    "it": "IT",
+    "de": "DE",
+    "fr": "FR"
+  }
+}
