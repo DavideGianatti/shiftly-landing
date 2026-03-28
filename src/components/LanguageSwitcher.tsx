@@ -11,9 +11,18 @@ export function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
 
   function switchLocale(newLocale: string) {
+    // pathname is like /en/... or /it/... — replace the first segment
     const segments = pathname.split("/");
-    segments[1] = newLocale;
-    router.push(segments.join("/"));
+    const firstSegment = segments[1];
+    const hasLocalePrefix = routing.locales.includes(
+      firstSegment as (typeof routing.locales)[number]
+    );
+    if (hasLocalePrefix) {
+      segments[1] = newLocale;
+      router.push(segments.join("/") || "/");
+    } else {
+      router.push(`/${newLocale}${pathname === "/" ? "" : pathname}`);
+    }
   }
 
   return (
