@@ -10,50 +10,103 @@ import {
   FileDown,
 } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
-import { SectionWrapper } from "@/components/SectionWrapper";
 
 const features = [
-  { key: "feature1", icon: CalendarCheck },
-  { key: "feature2", icon: UserRoundSearch },
-  { key: "feature3", icon: Scale },
-  { key: "feature4", icon: ShieldCheck },
-  { key: "feature5", icon: FileDown },
+  {
+    key: "feature1",
+    icon: CalendarCheck,
+    gradient: "from-indigo-500 to-indigo-700",
+    glow: "shadow-indigo-200",
+  },
+  {
+    key: "feature2",
+    icon: UserRoundSearch,
+    gradient: "from-violet-500 to-violet-700",
+    glow: "shadow-violet-200",
+  },
+  {
+    key: "feature3",
+    icon: Scale,
+    gradient: "from-sky-500 to-sky-700",
+    glow: "shadow-sky-200",
+  },
+  {
+    key: "feature4",
+    icon: ShieldCheck,
+    gradient: "from-emerald-500 to-emerald-700",
+    glow: "shadow-emerald-200",
+  },
+  {
+    key: "feature5",
+    icon: FileDown,
+    gradient: "from-orange-500 to-orange-700",
+    glow: "shadow-orange-200",
+  },
 ] as const;
 
 export function FeaturesSection() {
   const t = useTranslations("Features");
 
   return (
-    <SectionWrapper id="features">
-      <h2 className="text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-        {t("title")}
-      </h2>
+    <section id="features" className="bg-slate-50 py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={fadeInUp}
+          className="mx-auto max-w-2xl text-center"
+        >
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-indigo-600">Features</p>
+          <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-5xl">
+            {t("title")}
+          </h2>
+        </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={staggerContainer}
-        className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        {features.map(({ key, icon: Icon }) => (
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          variants={staggerContainer}
+          className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {features.map(({ key, icon: Icon, gradient, glow }) => (
+            <motion.div
+              key={key}
+              variants={fadeInUp}
+              className="group rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-transparent hover:shadow-xl"
+            >
+              <div
+                className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${gradient} shadow-lg ${glow} shadow-md`}
+              >
+                <Icon className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="mt-5 text-lg font-bold text-slate-900">
+                {t(`${key}Title`)}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-500">
+                {t(`${key}Description`)}
+              </p>
+            </motion.div>
+          ))}
+
+          {/* CTA card */}
           <motion.div
-            key={key}
             variants={fadeInUp}
-            className="rounded-xl border border-border/60 bg-white p-6 transition-shadow duration-200 hover:shadow-md"
+            className="flex flex-col items-start justify-between rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-800 p-7 text-white"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10">
-              <Icon className="h-5 w-5 text-primary" />
-            </div>
-            <h3 className="mt-4 text-lg font-semibold text-foreground">
-              {t(`${key}Title`)}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              {t(`${key}Description`)}
+            <p className="text-lg font-bold leading-snug">
+              See it in action for your team
             </p>
+            <a
+              href="#early-access"
+              className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/25"
+            >
+              Join early access →
+            </a>
           </motion.div>
-        ))}
-      </motion.div>
-    </SectionWrapper>
+        </motion.div>
+      </div>
+    </section>
   );
 }
