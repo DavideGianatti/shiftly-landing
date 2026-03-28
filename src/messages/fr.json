@@ -1,0 +1,70 @@
+{
+  "Header": {
+    "logo": "Shiftly",
+    "features": "Fonctionnalités",
+    "earlyAccess": "Accès Anticipé",
+    "cta": "Réserver un appel découverte"
+  },
+  "Hero": {
+    "title": "Créez les plannings en quelques clics, pas en heures.",
+    "subtitle": "Shiftly crée automatiquement les plannings pour les équipes de santé — en respectant les exigences légales, les préférences des employés et les contraintes réelles.",
+    "cta": "Réserver un appel découverte",
+    "secondaryCta": "Voir comment ça marche",
+    "supporting": "Conçu pour les équipes de santé gérant des plannings complexes."
+  },
+  "Problem": {
+    "title": "La planification est encore manuelle, lente et stressante.",
+    "description": "Les équipes de santé passent des heures chaque semaine à créer les plannings. Gérer les disponibilités, les congés, les arrêts maladie et les contraintes légales rend la planification complexe et sujette aux erreurs.",
+    "bullet1": "Des heures perdues chaque semaine en planification manuelle.",
+    "bullet2": "Des changements de dernière minute et des ajustements constants.",
+    "bullet3": "Une gestion stressante des arrêts maladie.",
+    "bullet4": "Un risque d'erreurs et de plannings injustes."
+  },
+  "Solution": {
+    "title": "Découvrez Shiftly",
+    "description": "Shiftly génère automatiquement des plannings optimaux en quelques clics — en tenant compte des règles légales, de l'équilibre de l'équipe et des préférences des employés. Plus de tableurs. Plus de devinettes. Plus de temps perdu."
+  },
+  "Features": {
+    "title": "Conçu pour la planification de santé réelle",
+    "feature1Title": "Génération automatique des plannings",
+    "feature1Description": "Créez des plannings complets en quelques clics.",
+    "feature2Title": "Gestion intelligente des arrêts maladie",
+    "feature2Description": "Trouvez rapidement des remplaçants ou régénérez le planning.",
+    "feature3Title": "Répartition équitable de la charge de travail",
+    "feature3Description": "Équilibrez les gardes au sein de votre équipe.",
+    "feature4Title": "Planification basée sur des règles",
+    "feature4Description": "Respectez les exigences légales et les politiques internes.",
+    "feature5Title": "Export et partage simples",
+    "feature5Description": "Téléchargez les plannings en PDF et partagez-les avec votre équipe."
+  },
+  "Differentiation": {
+    "title": "Créé par des gens qui ont vraiment fait ce travail",
+    "description": "Shiftly a été créé par des personnes qui ont géré de vraies équipes et vécu la frustration de la planification manuelle. Nous avons construit Shiftly pour éliminer des heures de travail répétitif et rendre la planification simple, équitable et efficace."
+  },
+  "BrandStatement": {
+    "title": "Nous créons des logiciels pour ceux qui prennent soin des autres",
+    "description": "Shiftly existe pour simplifier la planification du personnel afin que les équipes de santé puissent se concentrer sur ce qui compte vraiment : prendre soin des gens."
+  },
+  "EarlyAccess": {
+    "title": "Nous recherchons des partenaires pionniers",
+    "description": "Nous travaillons actuellement avec un nombre limité d'équipes de santé pour tester et améliorer Shiftly. Rejoignez-nous en tant que partenaire pionnier et contribuez à façonner l'avenir de la planification des gardes.",
+    "cta": "Réserver un appel découverte"
+  },
+  "FinalCTA": {
+    "title": "Prêt à simplifier votre planification ?",
+    "cta": "Réserver un appel découverte"
+  },
+  "Footer": {
+    "brand": "Shiftly",
+    "tagline": "Planification intelligente pour les équipes de santé.",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
+  },
+  "LanguageSwitcher": {
+    "en": "EN",
+    "it": "IT",
+    "de": "DE",
+    "fr": "FR"
+  }
+}

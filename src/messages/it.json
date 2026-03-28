@@ -1,0 +1,70 @@
+{
+  "Header": {
+    "logo": "Shiftly",
+    "features": "Funzionalità",
+    "earlyAccess": "Accesso Anticipato",
+    "cta": "Prenota una chiamata conoscitiva"
+  },
+  "Hero": {
+    "title": "Crea i turni del personale in pochi click, non in ore.",
+    "subtitle": "Shiftly crea automaticamente i turni per i team sanitari — rispettando requisiti legali, preferenze dei dipendenti e vincoli reali.",
+    "cta": "Prenota una chiamata conoscitiva",
+    "secondaryCta": "Scopri come funziona",
+    "supporting": "Pensato per i team sanitari che gestiscono turni complessi."
+  },
+  "Problem": {
+    "title": "La pianificazione dei turni è ancora manuale, lenta e stressante.",
+    "description": "I team sanitari dedicano ore ogni settimana alla creazione dei turni. Gestire disponibilità, ferie, malattie e vincoli legali rende la pianificazione complessa e soggetta a errori.",
+    "bullet1": "Ore perse ogni settimana nella pianificazione manuale.",
+    "bullet2": "Cambiamenti dell'ultimo minuto e continui aggiustamenti.",
+    "bullet3": "Gestione stressante delle malattie.",
+    "bullet4": "Rischio di errori e turni iniqui."
+  },
+  "Solution": {
+    "title": "Scopri Shiftly",
+    "description": "Shiftly genera automaticamente turni ottimali in pochi click — tenendo conto delle regole legali, dell'equilibrio del team e delle preferenze dei dipendenti. Niente fogli di calcolo. Niente congetture. Niente tempo sprecato."
+  },
+  "Features": {
+    "title": "Pensato per la pianificazione sanitaria reale",
+    "feature1Title": "Generazione automatica dei turni",
+    "feature1Description": "Crea turni completi per il personale in pochi click.",
+    "feature2Title": "Gestione intelligente delle malattie",
+    "feature2Description": "Trova rapidamente sostituti o rigenera il turno.",
+    "feature3Title": "Distribuzione equa del carico di lavoro",
+    "feature3Description": "Bilancia i turni tra tutto il team.",
+    "feature4Title": "Pianificazione basata su regole",
+    "feature4Description": "Rispetta i requisiti legali e le politiche interne.",
+    "feature5Title": "Esportazione e condivisione semplice",
+    "feature5Description": "Scarica i turni in PDF e condividili con il tuo team."
+  },
+  "Differentiation": {
+    "title": "Creato da chi ha fatto davvero questo lavoro",
+    "description": "Shiftly è stato creato da persone che hanno gestito team reali e hanno vissuto la frustrazione della pianificazione manuale. Abbiamo costruito Shiftly per eliminare ore di lavoro ripetitivo e rendere la pianificazione semplice, equa ed efficiente."
+  },
+  "BrandStatement": {
+    "title": "Creiamo software per chi si prende cura degli altri",
+    "description": "Shiftly esiste per semplificare la pianificazione del personale, affinché i team sanitari possano concentrarsi su ciò che conta davvero: prendersi cura delle persone."
+  },
+  "EarlyAccess": {
+    "title": "Cerchiamo partner per la fase iniziale",
+    "description": "Attualmente collaboriamo con un numero limitato di team sanitari per testare e migliorare Shiftly. Unisciti come partner iniziale e contribuisci a plasmare il futuro della pianificazione dei turni.",
+    "cta": "Prenota una chiamata conoscitiva"
+  },
+  "FinalCTA": {
+    "title": "Pronto a semplificare la tua pianificazione?",
+    "cta": "Prenota una chiamata conoscitiva"
+  },
+  "Footer": {
+    "brand": "Shiftly",
+    "tagline": "Pianificazione intelligente dei turni per team sanitari.",
+    "contact": "Contatti",
+    "privacy": "Informativa sulla Privacy",
+    "rights": "Tutti i diritti riservati."
+  },
+  "LanguageSwitcher": {
+    "en": "EN",
+    "it": "IT",
+    "de": "DE",
+    "fr": "FR"
+  }
+}

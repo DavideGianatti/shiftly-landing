@@ -1,0 +1,70 @@
+{
+  "Header": {
+    "logo": "Shiftly",
+    "features": "Funktionen",
+    "earlyAccess": "Frühzugang",
+    "cta": "Kennenlerngespräch buchen"
+  },
+  "Hero": {
+    "title": "Dienstpläne in wenigen Klicks erstellen, nicht in Stunden.",
+    "subtitle": "Shiftly erstellt automatisch Dienstpläne für Gesundheitsteams — unter Berücksichtigung gesetzlicher Vorgaben, Mitarbeiterwünsche und realer Einschränkungen.",
+    "cta": "Kennenlerngespräch buchen",
+    "secondaryCta": "So funktioniert's",
+    "supporting": "Entwickelt für Gesundheitsteams mit komplexen Schichtplänen."
+  },
+  "Problem": {
+    "title": "Dienstplanung ist immer noch manuell, langsam und stressig.",
+    "description": "Gesundheitsteams verbringen jede Woche Stunden mit der Erstellung von Dienstplänen. Verfügbarkeiten, Ferien, Krankmeldungen und gesetzliche Vorgaben machen die Planung komplex und fehleranfällig.",
+    "bullet1": "Stunden gehen jede Woche für manuelle Planung verloren.",
+    "bullet2": "Kurzfristige Änderungen und ständige Anpassungen.",
+    "bullet3": "Stressige Verwaltung von Krankmeldungen.",
+    "bullet4": "Risiko von Fehlern und ungerechten Dienstplänen."
+  },
+  "Solution": {
+    "title": "Das ist Shiftly",
+    "description": "Shiftly generiert automatisch optimale Dienstpläne in wenigen Klicks — unter Berücksichtigung gesetzlicher Regeln, Teambalance und Mitarbeiterwünsche. Keine Tabellen. Kein Raten. Keine verschwendete Zeit."
+  },
+  "Features": {
+    "title": "Entwickelt für die Realität der Gesundheitsplanung",
+    "feature1Title": "Automatische Dienstplanerstellung",
+    "feature1Description": "Erstellen Sie komplette Dienstpläne in wenigen Klicks.",
+    "feature2Title": "Intelligente Krankmeldungsverwaltung",
+    "feature2Description": "Finden Sie schnell Ersatz oder generieren Sie den Plan neu.",
+    "feature3Title": "Faire Arbeitslastverteilung",
+    "feature3Description": "Verteilen Sie Schichten gleichmässig im Team.",
+    "feature4Title": "Regelbasierte Planung",
+    "feature4Description": "Berücksichtigt gesetzliche Vorgaben und interne Richtlinien.",
+    "feature5Title": "Einfacher Export & Teilen",
+    "feature5Description": "Laden Sie Dienstpläne als PDF herunter und teilen Sie sie mit Ihrem Team."
+  },
+  "Differentiation": {
+    "title": "Entwickelt von Menschen, die den Job selbst gemacht haben",
+    "description": "Shiftly wurde von Menschen entwickelt, die echte Teams geführt und die Frustration manueller Planung erlebt haben. Wir haben Shiftly gebaut, um Stunden repetitiver Arbeit zu eliminieren und die Planung einfach, fair und effizient zu machen."
+  },
+  "BrandStatement": {
+    "title": "Wir entwickeln Software für Menschen, die sich um andere kümmern",
+    "description": "Shiftly existiert, um die Personalplanung zu vereinfachen, damit sich Gesundheitsteams auf das konzentrieren können, was wirklich zählt: die Betreuung von Menschen."
+  },
+  "EarlyAccess": {
+    "title": "Wir suchen frühe Partner",
+    "description": "Wir arbeiten derzeit mit einer begrenzten Anzahl von Gesundheitsteams zusammen, um Shiftly zu testen und zu verbessern. Werden Sie früher Partner und gestalten Sie die Zukunft der Dienstplanung mit.",
+    "cta": "Kennenlerngespräch buchen"
+  },
+  "FinalCTA": {
+    "title": "Bereit, Ihre Dienstplanung zu vereinfachen?",
+    "cta": "Kennenlerngespräch buchen"
+  },
+  "Footer": {
+    "brand": "Shiftly",
+    "tagline": "Intelligente Dienstplanung für Gesundheitsteams.",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "LanguageSwitcher": {
+    "en": "EN",
+    "it": "IT",
+    "de": "DE",
+    "fr": "FR"
+  }
+}
