@@ -1,9 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
-import { fadeInUp } from "@/lib/animations";
 import { DottedSurface } from "@/components/ui/dotted-surface";
 import { buttonVariants } from "@/components/ui/button";
 import { DISCOVERY_CALL_URL } from "@/lib/constants";
@@ -23,13 +21,7 @@ export function EarlyAccessSection() {
     <section id="early-access" className="relative overflow-hidden bg-background py-24 md:py-32">
       <DottedSurface className="z-0" />
       <div className="relative z-10 mx-auto max-w-3xl px-6">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={fadeInUp}
-          className="px-10 py-14 text-center md:px-16 md:py-20"
-        >
+        <div className="rounded-3xl border border-stone-200 bg-white px-10 py-14 text-center shadow-sm md:px-16 md:py-20">
           <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">Early Access</p>
           <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-stone-900 md:text-5xl">
             {t("title")}
@@ -59,7 +51,7 @@ export function EarlyAccessSection() {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
