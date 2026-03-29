@@ -28,7 +28,7 @@ export function EarlyAccessSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
           variants={fadeInUp}
-          className="rounded-3xl border border-stone-200 bg-white px-10 py-14 text-center shadow-sm md:px-16 md:py-20"
+          className="px-10 py-14 text-center md:px-16 md:py-20"
         >
           <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">Early Access</p>
           <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-stone-900 md:text-5xl">
