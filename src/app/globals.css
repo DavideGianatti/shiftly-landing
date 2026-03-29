@@ -40,62 +40,90 @@
   --radius-xl: calc(var(--radius) * 1.4);
   --radius-2xl: calc(var(--radius) * 1.8);
 
-  /* Indigo palette */
-  --color-indigo-50: #eef2ff;
-  --color-indigo-100: #e0e7ff;
-  --color-indigo-200: #c7d2fe;
-  --color-indigo-300: #a5b4fc;
-  --color-indigo-400: #818cf8;
-  --color-indigo-500: #6366f1;
-  --color-indigo-600: #4f46e5;
-  --color-indigo-700: #4338ca;
-  --color-indigo-800: #3730a3;
-  --color-indigo-900: #312e81;
-  --color-indigo-950: #1e1b4b;
+  /* Stone palette */
+  --color-stone-50: #fafaf9;
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-300: #d6d3d1;
+  --color-stone-400: #a8a29e;
+  --color-stone-500: #78716c;
+  --color-stone-600: #57534e;
+  --color-stone-700: #44403c;
+  --color-stone-800: #292524;
+  --color-stone-900: #1c1917;
+  --color-stone-950: #0c0a09;
 
-  /* Slate palette */
-  --color-slate-50: #f8fafc;
-  --color-slate-100: #f1f5f9;
-  --color-slate-200: #e2e8f0;
-  --color-slate-300: #cbd5e1;
-  --color-slate-400: #94a3b8;
-  --color-slate-500: #64748b;
-  --color-slate-600: #475569;
-  --color-slate-700: #334155;
-  --color-slate-800: #1e293b;
-  --color-slate-900: #0f172a;
-  --color-slate-950: #020617;
+  /* Coral/warm accent palette */
+  --color-coral-50: #fff4f0;
+  --color-coral-100: #ffe8df;
+  --color-coral-200: #ffc9b5;
+  --color-coral-300: #ffa080;
+  --color-coral-400: #ff7a56;
+  --color-coral-500: #e8602e;
+  --color-coral-600: #c94f23;
+  --color-coral-700: #a33e1b;
+  --color-coral-800: #7d2f14;
+  --color-coral-900: #5c220e;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.13 0.02 250);
+  --background: oklch(0.993 0.004 80);
+  --foreground: oklch(0.20 0.01 60);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.13 0.02 250);
+  --card-foreground: oklch(0.20 0.01 60);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.13 0.02 250);
-  --primary: oklch(0.457 0.24 277);
+  --popover-foreground: oklch(0.20 0.01 60);
+  --primary: oklch(0.57 0.13 32);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0.005 250);
-  --secondary-foreground: oklch(0.20 0.02 250);
-  --muted: oklch(0.97 0.004 250);
-  --muted-foreground: oklch(0.52 0.015 250);
-  --accent: oklch(0.97 0.005 250);
-  --accent-foreground: oklch(0.20 0.02 250);
+  --secondary: oklch(0.97 0.003 60);
+  --secondary-foreground: oklch(0.28 0.01 60);
+  --muted: oklch(0.96 0.003 60);
+  --muted-foreground: oklch(0.52 0.01 60);
+  --accent: oklch(0.96 0.003 60);
+  --accent-foreground: oklch(0.28 0.01 60);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.91 0.006 250);
-  --input: oklch(0.91 0.006 250);
-  --ring: oklch(0.457 0.24 277);
+  --border: oklch(0.90 0.005 60);
+  --input: oklch(0.90 0.005 60);
+  --ring: oklch(0.57 0.13 32);
   --radius: 0.75rem;
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.457 0.24 277);
+  --sidebar-foreground: oklch(0.20 0.01 60);
+  --sidebar-primary: oklch(0.57 0.13 32);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.457 0.24 277);
+  --sidebar-accent-foreground: oklch(0.28 0 0);
+  --sidebar-border: oklch(0.90 0.005 60);
+  --sidebar-ring: oklch(0.57 0.13 32);
 }
+
+/* ── Spotlight card — coral border glow that follows the cursor ── */
+[data-spotlight-card]::before,
+[data-spotlight-card]::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  border: 1.5px solid transparent;
+  border-radius: inherit;
+  background-attachment: fixed;
+  background-size: calc(100% + 3px) calc(100% + 3px);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+}
+
+/* Coral glow */
+[data-spotlight-card]::before {
+  background-image: radial-gradient(
+    320px 320px at calc(var(--sx, -9999) * 1px) calc(var(--sy, -9999) * 1px),
+    hsl(20 79% 55% / 1),
+    transparent 100%
+  );
+  filter: brightness(1.6);
+}
+
 
 @layer base {
   * {

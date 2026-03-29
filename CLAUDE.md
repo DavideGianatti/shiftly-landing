@@ -9,6 +9,10 @@ Next.js 15, React 19, TypeScript, Tailwind CSS 4, Shadcn/ui (Button + Sheet), ne
 - `npm run dev` — dev server (Turbopack)
 - `npm run build` — production build
 - `npm run lint` — ESLint
+- `npm run screenshot` — take Playwright screenshots of the running dev server
+
+## Git workflow
+After every relevant feature or fix, run `npm run build` to verify it compiles, then commit and push to `origin main`. Use concise, descriptive commit messages.
 
 ## Structure
 - `src/app/[locale]/` — pages with locale routing
@@ -27,4 +31,4 @@ Next.js 15, React 19, TypeScript, Tailwind CSS 4, Shadcn/ui (Button + Sheet), ne
 ## Design rules
 - NO: "AI powered", "revolutionizing", "in seconds", "instantly"
 - USE: "in a few clicks", "quickly"
-- Primary: indigo-600. White bg. Inter font. Minimalist.
+- Primary: coral-500 (#e8602e). Warm cream bg. Inter font. Minimalist.
