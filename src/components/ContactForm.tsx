@@ -20,7 +20,7 @@ function SubmitButton() {
       disabled={pending}
       className={cn(
         buttonVariants({ size: "lg" }),
-        "w-full rounded-full bg-coral-900 text-white hover:bg-coral-800 font-semibold gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
+        "w-full rounded-full bg-stone-900 text-white hover:bg-stone-700 font-semibold gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
       )}
     >
       {pending ? (
