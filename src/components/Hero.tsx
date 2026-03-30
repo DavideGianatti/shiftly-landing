@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { fadeInUp } from "@/lib/animations";
 import { FloatingPaths } from "@/components/ui/background-paths";
-import { DISCOVERY_CALL_URL } from "@/lib/constants";
+import { useContactModal } from "@/components/ContactModalProvider";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export function Hero() {
   const t = useTranslations("Hero");
+  const { openContactModal } = useContactModal();
 
   return (
     <section className="relative overflow-hidden bg-background pt-32 pb-16 md:pt-40 md:pb-24">
@@ -39,8 +40,8 @@ export function Hero() {
             {t("subtitle")}
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <motion.a
-              href={DISCOVERY_CALL_URL}
+            <motion.button
+              onClick={openContactModal}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               className={cn(
@@ -50,7 +51,7 @@ export function Hero() {
             >
               {t("cta")}
               <ArrowRight className="h-4 w-4" />
-            </motion.a>
+            </motion.button>
             <motion.a
               href="#features"
               whileHover={{ scale: 1.02 }}

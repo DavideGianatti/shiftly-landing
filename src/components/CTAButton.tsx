@@ -2,7 +2,7 @@
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { DISCOVERY_CALL_URL } from "@/lib/constants";
+import { useContactModal } from "@/components/ContactModalProvider";
 import { motion } from "framer-motion";
 
 export function CTAButton({
@@ -16,18 +16,19 @@ export function CTAButton({
   size?: "default" | "sm" | "lg";
   className?: string;
 }) {
+  const { openContactModal } = useContactModal();
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       className="inline-block"
     >
-      <a
-        href={DISCOVERY_CALL_URL}
+      <button
+        onClick={openContactModal}
         className={cn(buttonVariants({ variant, size }), className)}
       >
         {children}
-      </a>
+      </button>
     </motion.div>
   );
 }

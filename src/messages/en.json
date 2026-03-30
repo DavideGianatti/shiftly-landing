@@ -3,12 +3,12 @@
     "logo": "Shiftly",
     "features": "Features",
     "earlyAccess": "Early Access",
-    "cta": "Book a Discovery Call"
+    "cta": "Request a Demo"
   },
   "Hero": {
     "title": "Build staff schedules in a few clicks, not hours.",
     "subtitle": "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, preferences, and real-world constraints.",
-    "cta": "Book a Discovery Call",
+    "cta": "Request a Demo",
     "secondaryCta": "See how it works",
     "supporting": "Built for healthcare teams managing complex shift schedules."
   },
@@ -53,7 +53,7 @@
   "EarlyAccess": {
     "title": "We are looking for early partners",
     "description": "We are currently working with a limited number of healthcare teams to test and improve Shiftly. Join as an early partner and help shape the future of staff scheduling.",
-    "cta": "Book a Discovery Call",
+    "cta": "Request a Demo",
     "perk1": "Direct access to the founding team",
     "perk2": "Shape the product roadmap",
     "perk3": "Priority onboarding & support",
@@ -61,7 +61,27 @@
   },
   "FinalCTA": {
     "title": "Ready to simplify your scheduling?",
-    "cta": "Book a Discovery Call"
+    "cta": "Request a Demo"
+  },
+  "ContactForm": {
+    "title": "Request a Demo",
+    "description": "Tell us a bit about your team and we'll get back to you within one working day.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Work email",
+    "emailPlaceholder": "you@hospital.com",
+    "organizationLabel": "Organization",
+    "organizationPlaceholder": "Hospital or clinic name",
+    "teamSizeLabel": "Team size",
+    "teamSizePlaceholder": "Select team size",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us about your scheduling challenges (optional)",
+    "submit": "Send request",
+    "sending": "Sending...",
+    "successTitle": "Thank you!",
+    "successMessage": "We'll get back to you within one working day.",
+    "errorMessage": "Something went wrong. Please try again or email us at",
+    "close": "Close"
   },
   "Footer": {
     "brand": "Shiftly",

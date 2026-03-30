@@ -11,12 +11,13 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { DISCOVERY_CALL_URL } from "@/lib/constants";
+import { useContactModal } from "@/components/ContactModalProvider";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const t = useTranslations("Header");
+  const { openContactModal } = useContactModal();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -50,15 +51,15 @@ export function Header() {
           </a>
           <div className="h-4 w-px bg-stone-200" />
           <LanguageSwitcher />
-          <a
-            href={DISCOVERY_CALL_URL}
+          <button
+            onClick={openContactModal}
             className={cn(
               buttonVariants({ size: "sm" }),
               "rounded-full bg-stone-900 text-white hover:bg-stone-700 font-semibold px-5"
             )}
           >
             {t("cta")}
-          </a>
+          </button>
         </nav>
 
         {/* Mobile nav */}
@@ -81,12 +82,12 @@ export function Header() {
                   {t("earlyAccess")}
                 </a>
                 <div className="pt-4">
-                  <a
-                    href={DISCOVERY_CALL_URL}
+                  <button
+                    onClick={openContactModal}
                     className={cn(buttonVariants({ size: "default" }), "w-full rounded-full bg-stone-900 text-white hover:bg-stone-700 font-semibold justify-center")}
                   >
                     {t("cta")}
-                  </a>
+                  </button>
                 </div>
               </nav>
             </SheetContent>

@@ -4,13 +4,14 @@ import { useTranslations } from "next-intl";
 import { ArrowRight, Check } from "lucide-react";
 import { DottedSurface } from "@/components/ui/dotted-surface";
 import { buttonVariants } from "@/components/ui/button";
-import { DISCOVERY_CALL_URL } from "@/lib/constants";
+import { useContactModal } from "@/components/ContactModalProvider";
 import { cn } from "@/lib/utils";
 
 const perkKeys = ["perk1", "perk2", "perk3", "perk4"] as const;
 
 export function EarlyAccessSection() {
   const t = useTranslations("EarlyAccess");
+  const { openContactModal } = useContactModal();
 
   return (
     <section id="early-access" className="relative overflow-hidden bg-background py-24 md:py-32">
@@ -25,8 +26,8 @@ export function EarlyAccessSection() {
             {t("description")}
           </p>
 
-          <a
-            href={DISCOVERY_CALL_URL}
+          <button
+            onClick={openContactModal}
             className={cn(
               buttonVariants({ size: "lg" }),
               "mt-10 rounded-full bg-stone-900 px-10 text-white hover:bg-stone-700 font-semibold gap-2"
@@ -34,7 +35,7 @@ export function EarlyAccessSection() {
           >
             {t("cta")}
             <ArrowRight className="h-4 w-4" />
-          </a>
+          </button>
 
           <ul className="mt-10 flex flex-col items-start gap-3 text-left sm:mx-auto sm:max-w-xs">
             {perkKeys.map((key) => (

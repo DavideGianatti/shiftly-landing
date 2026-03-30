@@ -3,12 +3,12 @@
     "logo": "Shiftly",
     "features": "Funzionalità",
     "earlyAccess": "Accesso Anticipato",
-    "cta": "Prenota una chiamata conoscitiva"
+    "cta": "Richiedi una demo"
   },
   "Hero": {
     "title": "Crea i turni del personale in pochi click, non in ore.",
     "subtitle": "Shiftly crea automaticamente i turni per i team sanitari — rispettando requisiti legali, preferenze e vincoli reali.",
-    "cta": "Prenota una chiamata conoscitiva",
+    "cta": "Richiedi una demo",
     "secondaryCta": "Scopri come funziona",
     "supporting": "Pensato per i team sanitari che gestiscono turni complessi."
   },
@@ -53,7 +53,7 @@
   "EarlyAccess": {
     "title": "Cerchiamo partner per la fase iniziale",
     "description": "Attualmente collaboriamo con un numero limitato di team sanitari per testare e migliorare Shiftly. Unisciti come partner iniziale e contribuisci a plasmare il futuro della pianificazione dei turni.",
-    "cta": "Prenota una chiamata conoscitiva",
+    "cta": "Richiedi una demo",
     "perk1": "Accesso diretto al team fondatore",
     "perk2": "Contribuisci al roadmap del prodotto",
     "perk3": "Onboarding e supporto prioritario",
@@ -61,7 +61,27 @@
   },
   "FinalCTA": {
     "title": "Pronto a semplificare la tua pianificazione?",
-    "cta": "Prenota una chiamata conoscitiva"
+    "cta": "Richiedi una demo"
+  },
+  "ContactForm": {
+    "title": "Richiedi una demo",
+    "description": "Dicci qualcosa del tuo team e ti risponderemo entro un giorno lavorativo.",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Il tuo nome",
+    "emailLabel": "Email di lavoro",
+    "emailPlaceholder": "tu@ospedale.it",
+    "organizationLabel": "Organizzazione",
+    "organizationPlaceholder": "Nome ospedale o clinica",
+    "teamSizeLabel": "Dimensione del team",
+    "teamSizePlaceholder": "Seleziona dimensione",
+    "messageLabel": "Messaggio",
+    "messagePlaceholder": "Raccontaci le tue difficoltà nella pianificazione (opzionale)",
+    "submit": "Invia richiesta",
+    "sending": "Invio in corso...",
+    "successTitle": "Grazie!",
+    "successMessage": "Ti risponderemo entro un giorno lavorativo.",
+    "errorMessage": "Qualcosa è andato storto. Riprova o scrivici a",
+    "close": "Chiudi"
   },
   "Footer": {
     "brand": "Shiftly",

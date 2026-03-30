@@ -3,12 +3,12 @@
     "logo": "Shiftly",
     "features": "Funktionen",
     "earlyAccess": "Frühzugang",
-    "cta": "Kennenlerngespräch buchen"
+    "cta": "Demo anfragen"
   },
   "Hero": {
     "title": "Dienstpläne in wenigen Klicks erstellen, nicht in Stunden.",
     "subtitle": "Shiftly erstellt automatisch Dienstpläne für Gesundheitsteams — unter Berücksichtigung gesetzlicher Vorgaben, Wünsche und realer Einschränkungen.",
-    "cta": "Kennenlerngespräch buchen",
+    "cta": "Demo anfragen",
     "secondaryCta": "So funktioniert's",
     "supporting": "Entwickelt für Gesundheitsteams mit komplexen Schichtplänen."
   },
@@ -53,7 +53,7 @@
   "EarlyAccess": {
     "title": "Wir suchen frühe Partner",
     "description": "Wir arbeiten derzeit mit einer begrenzten Anzahl von Gesundheitsteams zusammen, um Shiftly zu testen und zu verbessern. Werden Sie früher Partner und gestalten Sie die Zukunft der Dienstplanung mit.",
-    "cta": "Kennenlerngespräch buchen",
+    "cta": "Demo anfragen",
     "perk1": "Direkter Zugang zum Gründerteam",
     "perk2": "Gestalten Sie die Produkt-Roadmap mit",
     "perk3": "Prioritäres Onboarding & Support",
@@ -61,7 +61,27 @@
   },
   "FinalCTA": {
     "title": "Bereit, Ihre Dienstplanung zu vereinfachen?",
-    "cta": "Kennenlerngespräch buchen"
+    "cta": "Demo anfragen"
+  },
+  "ContactForm": {
+    "title": "Demo anfragen",
+    "description": "Erzählen Sie uns etwas über Ihr Team – wir melden uns innerhalb eines Werktages.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailLabel": "Geschäftliche E-Mail",
+    "emailPlaceholder": "sie@klinik.de",
+    "organizationLabel": "Organisation",
+    "organizationPlaceholder": "Name des Krankenhauses oder der Klinik",
+    "teamSizeLabel": "Teamgröße",
+    "teamSizePlaceholder": "Teamgröße auswählen",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Erzählen Sie uns von Ihren Planungsproblemen (optional)",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "successTitle": "Vielen Dank!",
+    "successMessage": "Wir melden uns innerhalb eines Werktages bei Ihnen.",
+    "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an",
+    "close": "Schließen"
   },
   "Footer": {
     "brand": "Shiftly",

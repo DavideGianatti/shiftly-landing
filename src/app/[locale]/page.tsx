@@ -3,10 +3,11 @@ import { Hero } from "@/components/Hero";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { EarlyAccessSection } from "@/components/EarlyAccessSection";
 import { Footer } from "@/components/Footer";
+import { ContactModalProvider } from "@/components/ContactModalProvider";
 
 export default function LandingPage() {
   return (
-    <>
+    <ContactModalProvider>
       <Header />
       <main>
         <Hero />
@@ -14,6 +15,6 @@ export default function LandingPage() {
         <EarlyAccessSection />
       </main>
       <Footer />
-    </>
+    </ContactModalProvider>
   );
 }

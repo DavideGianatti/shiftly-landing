@@ -3,12 +3,12 @@
     "logo": "Shiftly",
     "features": "Fonctionnalités",
     "earlyAccess": "Accès Anticipé",
-    "cta": "Réserver un appel découverte"
+    "cta": "Demander une démo"
   },
   "Hero": {
     "title": "Créez les plannings en quelques clics, pas en heures.",
     "subtitle": "Shiftly crée automatiquement les plannings pour les équipes de santé — en respectant les exigences légales, les préférences et les contraintes réelles.",
-    "cta": "Réserver un appel découverte",
+    "cta": "Demander une démo",
     "secondaryCta": "Voir comment ça marche",
     "supporting": "Conçu pour les équipes de santé gérant des plannings complexes."
   },
@@ -53,7 +53,7 @@
   "EarlyAccess": {
     "title": "Nous recherchons des partenaires pionniers",
     "description": "Nous travaillons actuellement avec un nombre limité d'équipes de santé pour tester et améliorer Shiftly. Rejoignez-nous en tant que partenaire pionnier et contribuez à façonner l'avenir de la planification des gardes.",
-    "cta": "Réserver un appel découverte",
+    "cta": "Demander une démo",
     "perk1": "Accès direct à l'équipe fondatrice",
     "perk2": "Contribuez à la feuille de route du produit",
     "perk3": "Onboarding et support prioritaires",
@@ -61,7 +61,27 @@
   },
   "FinalCTA": {
     "title": "Prêt à simplifier votre planification ?",
-    "cta": "Réserver un appel découverte"
+    "cta": "Demander une démo"
+  },
+  "ContactForm": {
+    "title": "Demander une démo",
+    "description": "Parlez-nous de votre équipe et nous vous répondrons dans un jour ouvrable.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "Email professionnel",
+    "emailPlaceholder": "vous@hopital.fr",
+    "organizationLabel": "Organisation",
+    "organizationPlaceholder": "Nom de l'hôpital ou de la clinique",
+    "teamSizeLabel": "Taille de l'équipe",
+    "teamSizePlaceholder": "Sélectionner la taille",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Parlez-nous de vos difficultés de planification (optionnel)",
+    "submit": "Envoyer la demande",
+    "sending": "Envoi en cours...",
+    "successTitle": "Merci !",
+    "successMessage": "Nous vous répondrons dans un jour ouvrable.",
+    "errorMessage": "Une erreur s'est produite. Veuillez réessayer ou nous écrire à",
+    "close": "Fermer"
   },
   "Footer": {
     "brand": "Shiftly",
