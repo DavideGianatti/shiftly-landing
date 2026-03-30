@@ -7,7 +7,7 @@
   },
   "Hero": {
     "title": "Crea i turni del personale in pochi click, non in ore.",
-    "subtitle": "Shiftly crea automaticamente i turni per i team sanitari — rispettando requisiti legali, preferenze dei dipendenti e vincoli reali.",
+    "subtitle": "Shiftly crea automaticamente i turni per i team sanitari — rispettando requisiti legali, preferenze e vincoli reali.",
     "cta": "Prenota una chiamata conoscitiva",
     "secondaryCta": "Scopri come funziona",
     "supporting": "Pensato per i team sanitari che gestiscono turni complessi."
@@ -22,20 +22,25 @@
   },
   "Solution": {
     "title": "Scopri Shiftly",
-    "description": "Shiftly genera automaticamente turni ottimali in pochi click — tenendo conto delle regole legali, dell'equilibrio del team e delle preferenze dei dipendenti. Niente fogli di calcolo. Niente congetture. Niente tempo sprecato."
+    "description": "Shiftly genera automaticamente turni ottimali in pochi click — tenendo conto delle regole legali, dell'equilibrio del team e delle preferenze. Niente fogli di calcolo. Niente congetture. Niente tempo sprecato."
   },
   "Features": {
     "title": "Pensato per la pianificazione sanitaria reale",
     "feature1Title": "Generazione automatica dei turni",
     "feature1Description": "Crea turni completi per il personale in pochi click.",
     "feature2Title": "Gestione intelligente delle malattie",
-    "feature2Description": "Trova rapidamente sostituti o rigenera il turno.",
-    "feature3Title": "Distribuzione equa del carico di lavoro",
-    "feature3Description": "Bilancia i turni tra tutto il team.",
+    "feature2Description": "Trova rapidamente i migliori sostituti quando qualcuno si ammala.",
+    "feature3Title": "Requisiti flessibili",
+    "feature3Description": "Part-time, turni ricorrenti, schemi personalizzati — tutto gestito senza sforzo.",
     "feature4Title": "Pianificazione basata su regole",
     "feature4Description": "Rispetta i requisiti legali e le politiche interne.",
-    "feature5Title": "Esportazione e condivisione semplice",
-    "feature5Description": "Scarica i turni in PDF e condividili con il tuo team."
+    "feature5Title": "Condivisione flessibile dei turni",
+    "feature5Description": "Esporta in PDF, invio automatico per email o accesso diretto all'app per il personale.",
+    "feature6Title": "Autogestione del personale",
+    "feature6Description": "I dipendenti possono richiedere turni specifici e scambi direttamente nell'app.",
+    "sickCallBadge": "Gestione intelligente delle malattie",
+    "sickCallTitle": "Gestisci i cambiamenti dell'ultimo minuto rapidamente",
+    "sickCallDescription": "Quando qualcuno si ammala o richiede un cambio di turno, Shiftly mostra subito chi è disponibile a fare il turno — così puoi risolvere in pochi click."
   },
   "Differentiation": {
     "title": "Creato da chi ha fatto davvero questo lavoro",
@@ -48,7 +53,11 @@
   "EarlyAccess": {
     "title": "Cerchiamo partner per la fase iniziale",
     "description": "Attualmente collaboriamo con un numero limitato di team sanitari per testare e migliorare Shiftly. Unisciti come partner iniziale e contribuisci a plasmare il futuro della pianificazione dei turni.",
-    "cta": "Prenota una chiamata conoscitiva"
+    "cta": "Prenota una chiamata conoscitiva",
+    "perk1": "Accesso diretto al team fondatore",
+    "perk2": "Contribuisci al roadmap del prodotto",
+    "perk3": "Onboarding e supporto prioritario",
+    "perk4": "Prezzi riservati ai partner iniziali"
   },
   "FinalCTA": {
     "title": "Pronto a semplificare la tua pianificazione?",

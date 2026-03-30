@@ -16,7 +16,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-background pt-32 pb-16 md:pt-40 md:pb-24">
       {/* Animated background paths */}
-      <div className="absolute inset-0 text-stone-900 opacity-30">
+      <div className="absolute inset-0 opacity-40">
         <FloatingPaths position={1} />
         <FloatingPaths position={-1} />
       </div>

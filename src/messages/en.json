@@ -7,7 +7,7 @@
   },
   "Hero": {
     "title": "Build staff schedules in a few clicks, not hours.",
-    "subtitle": "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, employee preferences, and real-world constraints.",
+    "subtitle": "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, preferences, and real-world constraints.",
     "cta": "Book a Discovery Call",
     "secondaryCta": "See how it works",
     "supporting": "Built for healthcare teams managing complex shift schedules."
@@ -22,20 +22,25 @@
   },
   "Solution": {
     "title": "Meet Shiftly",
-    "description": "Shiftly automatically generates optimal staff schedules in a few clicks — taking into account legal rules, team balance and employee preferences. No spreadsheets. No guesswork. No wasted time."
+    "description": "Shiftly automatically generates optimal staff schedules in a few clicks — taking into account legal rules, team balance and preferences. No spreadsheets. No guesswork. No wasted time."
   },
   "Features": {
     "title": "Built for real-world healthcare scheduling",
     "feature1Title": "Automatic schedule generation",
     "feature1Description": "Create complete staff schedules in a few clicks.",
     "feature2Title": "Smart sick call handling",
-    "feature2Description": "Quickly find replacements or regenerate the schedule.",
-    "feature3Title": "Fair workload distribution",
-    "feature3Description": "Balance shifts across your team.",
+    "feature2Description": "Quickly find the best replacements when someone calls in sick.",
+    "feature3Title": "Flexible requirements",
+    "feature3Description": "Part-time schedules, recurring shifts, custom patterns — all handled seamlessly.",
     "feature4Title": "Rule-based planning",
     "feature4Description": "Respect legal requirements and internal policies.",
-    "feature5Title": "Simple export & sharing",
-    "feature5Description": "Download schedules as PDF and share them with your team."
+    "feature5Title": "Flexible schedule sharing",
+    "feature5Description": "Export as PDF, auto-send by email, or let employees view shifts directly in the app.",
+    "feature6Title": "Employee self-service",
+    "feature6Description": "Employees can request specific shifts and swaps directly in the app.",
+    "sickCallBadge": "Smart sick call handling",
+    "sickCallTitle": "Handle last-minute changes quickly",
+    "sickCallDescription": "When someone calls in sick or requests a shift change, Shiftly immediately shows you who's available to swap — so you can resolve it in a few clicks."
   },
   "Differentiation": {
     "title": "Built by people who actually did the job",
@@ -48,7 +53,11 @@
   "EarlyAccess": {
     "title": "We are looking for early partners",
     "description": "We are currently working with a limited number of healthcare teams to test and improve Shiftly. Join as an early partner and help shape the future of staff scheduling.",
-    "cta": "Book a Discovery Call"
+    "cta": "Book a Discovery Call",
+    "perk1": "Direct access to the founding team",
+    "perk2": "Shape the product roadmap",
+    "perk3": "Priority onboarding & support",
+    "perk4": "Early partner pricing"
   },
   "FinalCTA": {
     "title": "Ready to simplify your scheduling?",

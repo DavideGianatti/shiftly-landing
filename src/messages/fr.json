@@ -7,7 +7,7 @@
   },
   "Hero": {
     "title": "Créez les plannings en quelques clics, pas en heures.",
-    "subtitle": "Shiftly crée automatiquement les plannings pour les équipes de santé — en respectant les exigences légales, les préférences des employés et les contraintes réelles.",
+    "subtitle": "Shiftly crée automatiquement les plannings pour les équipes de santé — en respectant les exigences légales, les préférences et les contraintes réelles.",
     "cta": "Réserver un appel découverte",
     "secondaryCta": "Voir comment ça marche",
     "supporting": "Conçu pour les équipes de santé gérant des plannings complexes."
@@ -22,20 +22,25 @@
   },
   "Solution": {
     "title": "Découvrez Shiftly",
-    "description": "Shiftly génère automatiquement des plannings optimaux en quelques clics — en tenant compte des règles légales, de l'équilibre de l'équipe et des préférences des employés. Plus de tableurs. Plus de devinettes. Plus de temps perdu."
+    "description": "Shiftly génère automatiquement des plannings optimaux en quelques clics — en tenant compte des règles légales, de l'équilibre de l'équipe et des préférences. Plus de tableurs. Plus de devinettes. Plus de temps perdu."
   },
   "Features": {
     "title": "Conçu pour la planification de santé réelle",
     "feature1Title": "Génération automatique des plannings",
     "feature1Description": "Créez des plannings complets en quelques clics.",
     "feature2Title": "Gestion intelligente des arrêts maladie",
-    "feature2Description": "Trouvez rapidement des remplaçants ou régénérez le planning.",
-    "feature3Title": "Répartition équitable de la charge de travail",
-    "feature3Description": "Équilibrez les gardes au sein de votre équipe.",
+    "feature2Description": "Trouvez rapidement les meilleurs remplaçants quand quelqu'un se déclare malade.",
+    "feature3Title": "Exigences flexibles",
+    "feature3Description": "Temps partiels, gardes récurrentes, schémas personnalisés — tout géré sans effort.",
     "feature4Title": "Planification basée sur des règles",
     "feature4Description": "Respectez les exigences légales et les politiques internes.",
-    "feature5Title": "Export et partage simples",
-    "feature5Description": "Téléchargez les plannings en PDF et partagez-les avec votre équipe."
+    "feature5Title": "Partage flexible des plannings",
+    "feature5Description": "Exportez en PDF, envoi automatique par email ou accès direct à l'app pour les employés.",
+    "feature6Title": "Libre-service pour les employés",
+    "feature6Description": "Les employés peuvent demander des gardes spécifiques et des échanges directement dans l'app.",
+    "sickCallBadge": "Gestion intelligente des arrêts maladie",
+    "sickCallTitle": "Gérez les changements de dernière minute rapidement",
+    "sickCallDescription": "Quand quelqu'un se déclare malade ou demande un échange de garde, Shiftly vous montre immédiatement qui est disponible — vous pouvez résoudre ça en quelques clics."
   },
   "Differentiation": {
     "title": "Créé par des gens qui ont vraiment fait ce travail",
@@ -48,7 +53,11 @@
   "EarlyAccess": {
     "title": "Nous recherchons des partenaires pionniers",
     "description": "Nous travaillons actuellement avec un nombre limité d'équipes de santé pour tester et améliorer Shiftly. Rejoignez-nous en tant que partenaire pionnier et contribuez à façonner l'avenir de la planification des gardes.",
-    "cta": "Réserver un appel découverte"
+    "cta": "Réserver un appel découverte",
+    "perk1": "Accès direct à l'équipe fondatrice",
+    "perk2": "Contribuez à la feuille de route du produit",
+    "perk3": "Onboarding et support prioritaires",
+    "perk4": "Tarif partenaire pionnier"
   },
   "FinalCTA": {
     "title": "Prêt à simplifier votre planification ?",

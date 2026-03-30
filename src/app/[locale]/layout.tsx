@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Shiftly — Smart Staff Scheduling for Healthcare Teams",
   description:
-    "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, employee preferences, and real-world constraints.",
+    "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, preferences, and real-world constraints.",
 };
 
 export function generateStaticParams() {

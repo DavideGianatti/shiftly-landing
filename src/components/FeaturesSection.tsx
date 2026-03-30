@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import {
   CalendarDays,
   PhoneCall,
-  Users,
+  SlidersHorizontal,
   ShieldCheck,
-  Download,
+  Share2,
+  MessageSquare,
 } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
@@ -16,9 +17,10 @@ import Image from "next/image";
 const features = [
   { key: "feature1", icon: CalendarDays },
   { key: "feature2", icon: PhoneCall },
-  { key: "feature3", icon: Users },
+  { key: "feature3", icon: SlidersHorizontal },
   { key: "feature4", icon: ShieldCheck },
-  { key: "feature5", icon: Download },
+  { key: "feature5", icon: Share2 },
+  { key: "feature6", icon: MessageSquare },
 ] as const;
 
 export function FeaturesSection() {
@@ -77,15 +79,13 @@ export function FeaturesSection() {
           <div className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
             <div className="px-8 pt-10 pb-6 text-center md:px-14">
               <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">
-                Smart sick call handling
+                {t("sickCallBadge")}
               </p>
               <h3 className="mt-2 text-2xl font-bold text-stone-900 md:text-3xl">
-                Handle last-minute changes quickly
+                {t("sickCallTitle")}
               </h3>
               <p className="mt-3 text-base text-stone-500 max-w-lg mx-auto">
-                When someone calls in sick, Shiftly immediately shows you
-                who&apos;s available to swap — so you can resolve it in a few
-                clicks.
+                {t("sickCallDescription")}
               </p>
             </div>
             <div className="px-6 pb-6 md:px-10">

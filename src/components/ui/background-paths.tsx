@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 // Deterministic durations — no Math.random() to avoid SSR/client hydration mismatch
 const DURATIONS = Array.from({ length: 36 }, (_, i) => 20 + (i % 10));
 
+
 export function FloatingPaths({ position }: { position: number }) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
     id: i,
@@ -15,8 +16,8 @@ export function FloatingPaths({ position }: { position: number }) {
     } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
       684 - i * 5 * position
     } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
-    width: 0.5 + i * 0.03,
-    opacity: 0.03 + i * 0.008,
+    width: 0.3 + i * 0.03,
+    opacity: 0.05 + i * 0.016,
   }));
 
   return (
@@ -26,7 +27,7 @@ export function FloatingPaths({ position }: { position: number }) {
           <motion.path
             key={path.id}
             d={path.d}
-            stroke="currentColor"
+            stroke="#c94f23"
             strokeWidth={path.width}
             strokeOpacity={path.opacity}
             initial={{ pathLength: 0.3, opacity: 0.6 }}

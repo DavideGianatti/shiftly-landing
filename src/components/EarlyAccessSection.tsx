@@ -7,12 +7,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { DISCOVERY_CALL_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
-const perks = [
-  "Direct access to the founding team",
-  "Shape the product roadmap",
-  "Priority onboarding & support",
-  "Early partner pricing",
-];
+const perkKeys = ["perk1", "perk2", "perk3", "perk4"] as const;
 
 export function EarlyAccessSection() {
   const t = useTranslations("EarlyAccess");
@@ -42,12 +37,12 @@ export function EarlyAccessSection() {
           </a>
 
           <ul className="mt-10 flex flex-col items-start gap-3 text-left sm:mx-auto sm:max-w-xs">
-            {perks.map((perk) => (
-              <li key={perk} className="flex items-center gap-3">
+            {perkKeys.map((key) => (
+              <li key={key} className="flex items-center gap-3">
                 <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-coral-100">
                   <Check className="h-3 w-3 text-coral-600" />
                 </div>
-                <span className="text-sm text-stone-600">{perk}</span>
+                <span className="text-sm text-stone-600">{t(key)}</span>
               </li>
             ))}
           </ul>
