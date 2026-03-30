@@ -1,1 +1,1 @@
-export const CONTACT_EMAIL = "hello@shiftly.ch";
+export const CONTACT_EMAIL = "davidegianatti@gmail.com";

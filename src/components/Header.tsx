@@ -55,7 +55,7 @@ export function Header() {
             onClick={openContactModal}
             className={cn(
               buttonVariants({ size: "sm" }),
-              "rounded-full bg-stone-900 text-white hover:bg-stone-700 font-semibold px-5"
+              "rounded-full bg-coral-600 text-white hover:bg-coral-700 font-semibold px-5"
             )}
           >
             {t("cta")}
@@ -84,7 +84,7 @@ export function Header() {
                 <div className="pt-4">
                   <button
                     onClick={openContactModal}
-                    className={cn(buttonVariants({ size: "default" }), "w-full rounded-full bg-stone-900 text-white hover:bg-stone-700 font-semibold justify-center")}
+                    className={cn(buttonVariants({ size: "default" }), "w-full rounded-full bg-coral-600 text-white hover:bg-coral-700 font-semibold justify-center")}
                   >
                     {t("cta")}
                   </button>
