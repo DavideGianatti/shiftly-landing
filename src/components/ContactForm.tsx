@@ -9,7 +9,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CONTACT_EMAIL } from "@/lib/constants";
 
-const TEAM_SIZE_OPTIONS = ["1-10", "11-50", "51-200", "200+"] as const;
+const TEAM_SIZE_OPTIONS = ["1-10", "10-30", "30-100", "100+"] as const;
 
 function SubmitButton() {
   const { pending } = useFormStatus();
