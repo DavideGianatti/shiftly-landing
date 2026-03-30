@@ -30,7 +30,7 @@ export function EarlyAccessSection() {
             onClick={openContactModal}
             className={cn(
               buttonVariants({ size: "lg" }),
-              "mt-10 rounded-full bg-coral-600 px-10 text-white hover:bg-coral-700 font-semibold gap-2"
+              "mt-10 rounded-full bg-stone-900 px-10 text-white hover:bg-stone-700 font-semibold gap-2"
             )}
           >
             {t("cta")}
