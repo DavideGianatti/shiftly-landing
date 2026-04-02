@@ -2,14 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
-import { Menu, Activity } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetTitle,
-} from "@/components/ui/sheet";
+import { Activity } from "lucide-react";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useContactModal } from "@/components/ContactModalProvider";
 import { buttonVariants } from "@/components/ui/button";
@@ -63,35 +56,8 @@ export function Header() {
         </nav>
 
         {/* Mobile nav */}
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="md:hidden">
           <LanguageSwitcher />
-          <Sheet>
-            <SheetTrigger render={<Button variant="ghost" size="sm" className="text-stone-600 hover:bg-stone-100 hover:text-stone-900" />}>
-              <Menu className="h-5 w-5" />
-            </SheetTrigger>
-            <SheetContent side="right" className="w-72 bg-white border-stone-200">
-              <SheetTitle className="flex items-center gap-2 text-lg font-semibold text-stone-900">
-                <Activity className="h-5 w-5 text-coral-500" />
-                {t("logo")}
-              </SheetTitle>
-              <nav className="mt-8 flex flex-col gap-4">
-                <a href="#features" className="text-base font-medium text-stone-600 hover:text-stone-900">
-                  {t("features")}
-                </a>
-                <a href="#early-access" className="text-base font-medium text-stone-600 hover:text-stone-900">
-                  {t("earlyAccess")}
-                </a>
-                <div className="pt-4">
-                  <button
-                    onClick={openContactModal}
-                    className={cn(buttonVariants({ size: "default" }), "w-full rounded-full bg-stone-900 text-white hover:bg-stone-700 font-semibold justify-center")}
-                  >
-                    {t("cta")}
-                  </button>
-                </div>
-              </nav>
-            </SheetContent>
-          </Sheet>
         </div>
       </div>
     </header>

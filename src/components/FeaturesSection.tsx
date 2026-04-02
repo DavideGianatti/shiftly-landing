@@ -77,7 +77,7 @@ export function FeaturesSection() {
           className="mt-20"
         >
           <div className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-            <div className="px-8 pt-10 pb-6 text-center md:px-14">
+            <div className="px-4 pt-8 pb-5 text-center sm:px-8 sm:pt-10 sm:pb-6 md:px-14">
               <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">
                 {t("sickCallBadge")}
               </p>
@@ -88,7 +88,7 @@ export function FeaturesSection() {
                 {t("sickCallDescription")}
               </p>
             </div>
-            <div className="px-6 pb-6 md:px-10">
+            <div className="px-3 pb-4 sm:px-6 sm:pb-6 md:px-10">
               <div className="overflow-hidden rounded-xl border border-stone-200 shadow-sm">
                 <Image
                   src="/screenshots/swap_sick_leave_request.png"

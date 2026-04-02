@@ -33,20 +33,20 @@ export function Hero() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-coral-500">
             {t("supporting")}
           </p>
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-stone-900 md:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-bold leading-[1.1] tracking-tight text-stone-900 sm:text-4xl md:text-5xl lg:text-6xl">
             {t("title")}
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-stone-500 md:text-xl">
             {t("subtitle")}
           </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
             <motion.button
               onClick={openContactModal}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               className={cn(
                 buttonVariants({ size: "lg" }),
-                "rounded-full bg-stone-900 px-8 text-white hover:bg-stone-700 font-semibold gap-2"
+                "w-full rounded-full bg-stone-900 px-8 text-white hover:bg-stone-700 font-semibold gap-2 sm:w-auto"
               )}
             >
               {t("cta")}
