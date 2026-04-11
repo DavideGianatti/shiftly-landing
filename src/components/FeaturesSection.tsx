@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
-import Image from "next/image";
+import { SwapPreview } from "@/components/schedule-preview/SwapPreview";
 
 const features = [
   { key: "feature1", icon: CalendarDays },
@@ -39,7 +39,7 @@ export function FeaturesSection() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-coral-500">
             Features
           </p>
-          <h2 className="text-4xl font-bold leading-tight tracking-tight text-stone-900 md:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl md:text-5xl">
             {t("title")}
           </h2>
         </motion.div>
@@ -49,18 +49,18 @@ export function FeaturesSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
           variants={staggerContainer}
-          className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3"
         >
           {features.map(({ key, icon: Icon }) => (
             <motion.div key={key} variants={fadeInUp}>
-              <SpotlightCard className="relative h-full rounded-2xl border border-stone-200 bg-white p-7">
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-coral-50">
-                  <Icon className="h-5 w-5 text-coral-500" strokeWidth={1.75} />
+              <SpotlightCard className="relative h-full rounded-2xl border border-stone-200 bg-white p-4 sm:p-7">
+                <div className="inline-flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg sm:rounded-xl bg-coral-50">
+                  <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-coral-500" strokeWidth={1.75} />
                 </div>
-                <h3 className="mt-5 text-base font-semibold text-stone-900">
+                <h3 className="mt-3 sm:mt-5 text-sm sm:text-base font-semibold text-stone-900">
                   {t(`${key}Title`)}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-stone-500">
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm leading-relaxed text-stone-500">
                   {t(`${key}Description`)}
                 </p>
               </SpotlightCard>
@@ -84,20 +84,12 @@ export function FeaturesSection() {
               <h3 className="mt-2 text-2xl font-bold text-stone-900 md:text-3xl">
                 {t("sickCallTitle")}
               </h3>
-              <p className="mt-3 text-base text-stone-500 max-w-lg mx-auto">
+              <p className="mt-3 text-sm sm:text-base text-stone-500 max-w-lg mx-auto">
                 {t("sickCallDescription")}
               </p>
             </div>
             <div className="px-3 pb-4 sm:px-6 sm:pb-6 md:px-10">
-              <div className="overflow-hidden rounded-xl border border-stone-200 shadow-sm">
-                <Image
-                  src="/screenshots/swap_sick_leave_request.png"
-                  alt="Shiftly sick leave swap interface"
-                  width={1200}
-                  height={500}
-                  className="w-full"
-                />
-              </div>
+              <SwapPreview />
             </div>
           </div>
         </motion.div>

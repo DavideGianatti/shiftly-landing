@@ -8,7 +8,7 @@ import { FloatingPaths } from "@/components/ui/background-paths";
 import { useContactModal } from "@/components/ContactModalProvider";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { SchedulePreview } from "@/components/schedule-preview/SchedulePreview";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -36,7 +36,7 @@ export function Hero() {
           <h1 className="text-3xl font-bold leading-[1.1] tracking-tight text-stone-900 sm:text-4xl md:text-5xl lg:text-6xl">
             {t("title")}
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-stone-500 md:text-xl">
+          <p className="mt-6 text-sm leading-relaxed text-stone-500 sm:text-lg md:text-xl">
             {t("subtitle")}
           </p>
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
@@ -81,14 +81,7 @@ export function Hero() {
               </div>
               <div className="ml-2 h-5 flex-1 rounded-md bg-stone-200/70 max-w-xs" />
             </div>
-            <Image
-              src="/screenshots/spreadsheet_with_shifts.png"
-              alt="Shiftly schedule view — color-coded shifts for your whole team"
-              width={1200}
-              height={540}
-              className="w-full"
-              priority
-            />
+            <SchedulePreview />
           </div>
         </motion.div>
       </div>

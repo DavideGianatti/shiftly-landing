@@ -17,6 +17,7 @@ export async function submitContact(
     name: formData.get("name"),
     email: formData.get("email"),
     organization: formData.get("organization") || undefined,
+    phone: formData.get("phone") || undefined,
     teamSize: formData.get("teamSize") || undefined,
     message: formData.get("message") || undefined,
     _honeypot: formData.get("_honeypot") || undefined,
@@ -28,7 +29,7 @@ export async function submitContact(
     return { status: "error", message: "Invalid form data." };
   }
 
-  const { name, email, organization, teamSize, message, _honeypot } = parsed.data;
+  const { name, email, organization, phone, teamSize, message, _honeypot } = parsed.data;
 
   // Honeypot check — bots fill this field, humans don't
   if (_honeypot) {
@@ -40,6 +41,7 @@ export async function submitContact(
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
     ${organization ? `<p><strong>Organization:</strong> ${organization}</p>` : ""}
+    ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ""}
     ${teamSize ? `<p><strong>Team size:</strong> ${teamSize}</p>` : ""}
     ${message ? `<p><strong>Message:</strong><br>${message.replace(/\n/g, "<br>")}</p>` : ""}
   `;
@@ -55,11 +57,13 @@ export async function submitContact(
     });
 
     if (error) {
+      console.error("[Resend error]", error);
       return { status: "error", message: "Failed to send message. Please try again." };
     }
 
     return { status: "success" };
-  } catch {
+  } catch (err) {
+    console.error("[submitContact error]", err);
     return { status: "error", message: "Failed to send message. Please try again." };
   }
 }

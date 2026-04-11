@@ -19,10 +19,10 @@ export function EarlyAccessSection() {
       <div className="relative z-10 mx-auto max-w-3xl px-6">
         <div className="rounded-3xl border border-stone-200 bg-white px-6 py-10 text-center shadow-sm sm:px-10 sm:py-14 md:px-16 md:py-20">
           <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">Early Access</p>
-          <h2 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-stone-900 md:text-5xl">
+          <h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl md:text-5xl">
             {t("title")}
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-stone-500">
+          <p className="mt-5 text-sm leading-relaxed text-stone-500 sm:text-lg">
             {t("description")}
           </p>
 
