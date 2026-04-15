@@ -87,27 +87,95 @@
     "close": "Schließen"
   },
   "SchedulingWidget": {
-    "label": "Erzählen Sie uns von Ihren Planungsherausforderungen",
+    "label": "Helfen Sie uns, Shiftly für Ihr Team zu konfigurieren",
     "progress": "{answered} von {total} beantwortet",
     "progressComplete": "Alle beantwortet ✓",
     "back": "Zurück",
     "next": "Weiter",
     "skip": "Überspringen",
-    "q1Label": "Was ist Ihre größte Herausforderung bei der Dienstplanung?",
-    "q1Opt1": "Schichtabdeckung",
-    "q1Opt2": "Kurzfristige Änderungen",
-    "q1Opt3": "Personalverfügbarkeit",
-    "q1Opt4": "Compliance & Vorschriften",
-    "q2Label": "Wie viele Schichten verwalten Sie pro Woche?",
-    "q2Opt1": "Weniger als 20",
-    "q2Opt2": "20–50",
-    "q2Opt3": "50–100",
-    "q2Opt4": "Mehr als 100",
-    "q3Label": "Wie verwalten Sie derzeit Ihren Dienstplan?",
-    "q3Opt1": "Tabellenkalkulationen",
-    "q3Opt2": "Papier & Whiteboard",
-    "q3Opt3": "Andere Software",
-    "q3Opt4": "Kein formales System"
+    "done": "Fertig ✓",
+    "stepShifts": {
+      "title": "Welche Schichten hat Ihr Team?",
+      "description": "Definieren Sie jeden Schichttyp. Stunden werden automatisch berechnet, können aber überschrieben werden. Abdeckung ist die Mindestanzahl an Personal.",
+      "nameLabel": "Schichtname",
+      "namePlaceholder": "z.B. Frühschicht",
+      "startLabel": "Beginn",
+      "endLabel": "Ende",
+      "hoursLabel": "Stunden",
+      "coverageLabel": "Abdeckung",
+      "addShift": "Schicht hinzufügen",
+      "removeShift": "Schicht entfernen"
+    },
+    "stepHardTransitions": {
+      "title": "Gibt es verbotene Schichtübergänge?",
+      "description": "Wählen Sie Paare von Schichten, die nie aufeinanderfolgen dürfen. Legen Sie auch die Mindestruhezeit fest.",
+      "pairsTitle": "Verbotene Übergänge",
+      "addPair": "Übergang hinzufügen",
+      "minRestLabel": "Mindestruhezeit zwischen aufeinanderfolgenden Schichten",
+      "hoursUnit": "Stunden",
+      "needShiftsHint": "Definieren Sie zuerst Ihre Schichten in Schritt 1."
+    },
+    "stepSoftTransitions": {
+      "title": "Gibt es Schichtübergänge, die Sie möglichst vermeiden möchten?",
+      "description": "Keine festen Regeln, aber sollten minimiert werden (z.B. Spätschicht → Frühschicht)."
+    },
+    "stepWorkingHours": {
+      "title": "Gibt es Arbeitszeitgrenzen?",
+      "description": "Legen Sie Mindest- und/oder Höchststunden pro Zeitfenster fest. Leer lassen, wenn nicht zutreffend.",
+      "week": "Pro Woche",
+      "month": "Pro Monat",
+      "minLabel": "Minimum",
+      "maxLabel": "Maximum",
+      "hoursUnit": "Stunden",
+      "optional": "optional"
+    },
+    "stepRotation": {
+      "title": "Gibt es einen standardmäßigen Rotationszyklus?",
+      "description": "Definieren Sie das ideale wiederholende Schichtmuster. Wählen Sie die Zykluslänge und weisen Sie jedem Tag eine Schicht zu.",
+      "cycleLengthLabel": "Zykluslänge",
+      "custom": "Benutzerdefiniert:",
+      "pickShift": "— Schicht wählen —",
+      "needShiftsHint": "Definieren Sie zuerst Ihre Schichten in Schritt 1."
+    },
+    "stepConsecutive": {
+      "title": "Präferenzen für aufeinanderfolgende gleiche Schichten",
+      "description": "Legen Sie für jeden Schichttyp fest, wie viele aufeinanderfolgende Tage der gleichen Schicht akzeptabel sind.",
+      "needShiftsHint": "Definieren Sie zuerst Ihre Schichten in Schritt 1.",
+      "none": "Keine Präferenz",
+      "prefer_different": "Verschiedene bevorzugen",
+      "prefer_pairs": "Paare bevorzugen",
+      "max_2": "Max. 2 in Folge",
+      "max_3": "Max. 3 in Folge"
+    },
+    "stepWeekends": {
+      "title": "Wochenend- und Feiertagsregelung",
+      "description": "Wie sollen Wochenend- und Feiertagsschichten im Team verteilt werden?",
+      "balance": "Gleichmäßig im Team verteilen",
+      "minimize": "Wochenendarbeit minimieren",
+      "not_relevant": "Für unser Team nicht relevant"
+    },
+    "stepPartTime": {
+      "title": "Haben Sie Teilzeitmitarbeiter?",
+      "description": "Teilzeitkräfte erhalten proportional angepasste Stundenziele.",
+      "yes": "Ja",
+      "no": "Nein",
+      "workersAt": "Mitarbeiter zu",
+      "addRow": "Gruppe hinzufügen"
+    },
+    "stepUpload": {
+      "title": "Haben Sie einen bestehenden Dienstplan zum Teilen?",
+      "description": "Hängen Sie eine Datei an (PDF, Bild, Excel, CSV) und fügen Sie Kommentare hinzu.",
+      "chooseFile": "Datei auswählen…",
+      "commentLabel": "Kommentare zu diesem Plan",
+      "commentPlaceholder": "Was wir über den bestehenden Plan wissen sollten…",
+      "sizeError": "Datei zu groß (max. {max} MB).",
+      "typeError": "Dateityp nicht unterstützt. Bitte PDF, PNG, JPG, XLSX, XLS oder CSV verwenden."
+    },
+    "note": {
+      "addNote": "Notiz hinzufügen",
+      "noteLabel": "Notiz",
+      "notePlaceholder": "Zusätzlicher Kontext…"
+    }
   },
   "Footer": {
     "brand": "Shiftly",

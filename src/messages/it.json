@@ -87,27 +87,95 @@
     "close": "Chiudi"
   },
   "SchedulingWidget": {
-    "label": "Raccontaci delle tue sfide di pianificazione",
+    "label": "Aiutaci a configurare Shiftly per il tuo team",
     "progress": "{answered} di {total} risposto",
     "progressComplete": "Tutto completato ✓",
     "back": "Indietro",
     "next": "Avanti",
     "skip": "Salta",
-    "q1Label": "Qual è la tua sfida principale nella pianificazione?",
-    "q1Opt1": "Copertura dei turni",
-    "q1Opt2": "Cambiamenti dell'ultimo minuto",
-    "q1Opt3": "Disponibilità del personale",
-    "q1Opt4": "Conformità normativa",
-    "q2Label": "Quanti turni gestisci a settimana?",
-    "q2Opt1": "Meno di 20",
-    "q2Opt2": "20–50",
-    "q2Opt3": "50–100",
-    "q2Opt4": "Più di 100",
-    "q3Label": "Come gestisci attualmente la pianificazione?",
-    "q3Opt1": "Fogli di calcolo",
-    "q3Opt2": "Carta e lavagna",
-    "q3Opt3": "Altro software",
-    "q3Opt4": "Nessun sistema formale"
+    "done": "Fatto ✓",
+    "stepShifts": {
+      "title": "Quali turni svolge il tuo team?",
+      "description": "Definisci ogni tipo di turno. Le ore vengono calcolate automaticamente da inizio/fine ma possono essere modificate. La copertura è il numero minimo di personale necessario.",
+      "nameLabel": "Nome del turno",
+      "namePlaceholder": "es. Mattina",
+      "startLabel": "Inizio",
+      "endLabel": "Fine",
+      "hoursLabel": "Ore",
+      "coverageLabel": "Copertura",
+      "addShift": "Aggiungi turno",
+      "removeShift": "Rimuovi turno"
+    },
+    "stepHardTransitions": {
+      "title": "Ci sono transizioni di turni vietate?",
+      "description": "Seleziona coppie di turni che non devono mai seguirsi. Imposta anche il riposo minimo tra turni consecutivi.",
+      "pairsTitle": "Transizioni vietate",
+      "addPair": "Aggiungi transizione",
+      "minRestLabel": "Riposo minimo tra turni consecutivi",
+      "hoursUnit": "ore",
+      "needShiftsHint": "Prima definisci i tuoi turni nel passaggio 1."
+    },
+    "stepSoftTransitions": {
+      "title": "Ci sono transizioni da evitare se possibile?",
+      "description": "Non sono regole fisse ma dovrebbero essere minimizzate (es. Pomeriggio → Mattina)."
+    },
+    "stepWorkingHours": {
+      "title": "Ci sono limiti di ore lavorative?",
+      "description": "Imposta le ore minime e/o massime per finestra temporale. Lascia vuoto se non applicabile.",
+      "week": "A settimana",
+      "month": "Al mese",
+      "minLabel": "Minimo",
+      "maxLabel": "Massimo",
+      "hoursUnit": "ore",
+      "optional": "opzionale"
+    },
+    "stepRotation": {
+      "title": "Esiste un ciclo di rotazione standard?",
+      "description": "Definisci il pattern di turni ripetuto. Seleziona la durata del ciclo e assegna un turno a ogni giorno.",
+      "cycleLengthLabel": "Durata ciclo",
+      "custom": "Personalizzato:",
+      "pickShift": "— scegli turno —",
+      "needShiftsHint": "Prima definisci i tuoi turni nel passaggio 1."
+    },
+    "stepConsecutive": {
+      "title": "Preferenze per turni consecutivi uguali",
+      "description": "Per ogni tipo di turno, imposta quanti giorni consecutivi dello stesso turno sono accettabili.",
+      "needShiftsHint": "Prima definisci i tuoi turni nel passaggio 1.",
+      "none": "Nessuna preferenza",
+      "prefer_different": "Preferire diversi",
+      "prefer_pairs": "Preferire coppie",
+      "max_2": "Max 2 di fila",
+      "max_3": "Max 3 di fila"
+    },
+    "stepWeekends": {
+      "title": "Politica per weekend e festivi",
+      "description": "Come devono essere gestiti i turni del weekend e dei festivi nel team?",
+      "balance": "Distribuire equamente nel team",
+      "minimize": "Minimizzare il lavoro nel weekend",
+      "not_relevant": "Non rilevante per il nostro team"
+    },
+    "stepPartTime": {
+      "title": "Hai personale part-time?",
+      "description": "I lavoratori part-time ricevono obiettivi orari proporzionalmente ridotti.",
+      "yes": "Sì",
+      "no": "No",
+      "workersAt": "lavoratore/i al",
+      "addRow": "Aggiungi gruppo"
+    },
+    "stepUpload": {
+      "title": "Hai un piano esistente da condividere?",
+      "description": "Allega un file (PDF, immagine, Excel, CSV) e aggiungi commenti.",
+      "chooseFile": "Scegli file…",
+      "commentLabel": "Commenti su questo piano",
+      "commentPlaceholder": "Qualcosa che dobbiamo sapere sul piano esistente…",
+      "sizeError": "File troppo grande (max {max} MB).",
+      "typeError": "Tipo di file non supportato. Usa PDF, PNG, JPG, XLSX, XLS o CSV."
+    },
+    "note": {
+      "addNote": "Aggiungi una nota",
+      "noteLabel": "Nota",
+      "notePlaceholder": "Contesto aggiuntivo…"
+    }
   },
   "Footer": {
     "brand": "Shiftly",

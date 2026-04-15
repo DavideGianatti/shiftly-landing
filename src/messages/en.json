@@ -87,27 +87,95 @@
     "close": "Close"
   },
   "SchedulingWidget": {
-    "label": "Tell us more about your scheduling challenges",
+    "label": "Help us configure Shiftly for your team",
     "progress": "{answered} of {total} answered",
     "progressComplete": "All answered ✓",
     "back": "Back",
     "next": "Next",
     "skip": "Skip",
-    "q1Label": "What's your biggest scheduling challenge?",
-    "q1Opt1": "Shift coverage gaps",
-    "q1Opt2": "Last-minute changes",
-    "q1Opt3": "Staff availability",
-    "q1Opt4": "Compliance & regulations",
-    "q2Label": "How many shifts do you manage per week?",
-    "q2Opt1": "Fewer than 20",
-    "q2Opt2": "20–50",
-    "q2Opt3": "50–100",
-    "q2Opt4": "More than 100",
-    "q3Label": "How are you currently managing schedules?",
-    "q3Opt1": "Spreadsheets",
-    "q3Opt2": "Paper & whiteboard",
-    "q3Opt3": "Another software",
-    "q3Opt4": "No formal system"
+    "done": "Done ✓",
+    "stepShifts": {
+      "title": "What shifts does your team work?",
+      "description": "Define each shift type. Hours are auto-calculated from start/end but can be overridden. Coverage is the minimum number of staff needed.",
+      "nameLabel": "Shift name",
+      "namePlaceholder": "e.g. Morning",
+      "startLabel": "Start",
+      "endLabel": "End",
+      "hoursLabel": "Hours",
+      "coverageLabel": "Coverage",
+      "addShift": "Add shift",
+      "removeShift": "Remove shift"
+    },
+    "stepHardTransitions": {
+      "title": "Are there prohibited shift transitions?",
+      "description": "Select pairs of shifts that must never follow each other (e.g. Night → Early morning). Also set the minimum rest between consecutive shifts.",
+      "pairsTitle": "Prohibited transitions",
+      "addPair": "Add transition",
+      "minRestLabel": "Minimum rest between consecutive shifts",
+      "hoursUnit": "hours",
+      "needShiftsHint": "Define your shifts in step 1 first."
+    },
+    "stepSoftTransitions": {
+      "title": "Are there shift transitions you'd prefer to avoid?",
+      "description": "These are not hard rules but should be minimized where possible (e.g. Afternoon → Morning)."
+    },
+    "stepWorkingHours": {
+      "title": "Are there working hours limits?",
+      "description": "Set the minimum and/or maximum hours per time window. Leave blank if not applicable.",
+      "week": "Per week",
+      "month": "Per month",
+      "minLabel": "Minimum",
+      "maxLabel": "Maximum",
+      "hoursUnit": "hours",
+      "optional": "optional"
+    },
+    "stepRotation": {
+      "title": "Is there a standard rotation cycle?",
+      "description": "Define the ideal repeating shift pattern. Select the cycle length then assign a shift to each day.",
+      "cycleLengthLabel": "Cycle length",
+      "custom": "Custom:",
+      "pickShift": "— pick shift —",
+      "needShiftsHint": "Define your shifts in step 1 first."
+    },
+    "stepConsecutive": {
+      "title": "Consecutive same-shift preferences",
+      "description": "For each shift type, set how many consecutive days of that shift are acceptable.",
+      "needShiftsHint": "Define your shifts in step 1 first.",
+      "none": "No preference",
+      "prefer_different": "Prefer different",
+      "prefer_pairs": "Prefer pairs",
+      "max_2": "Max 2 in a row",
+      "max_3": "Max 3 in a row"
+    },
+    "stepWeekends": {
+      "title": "Weekend and festive day policy",
+      "description": "How should weekend and holiday shifts be handled across the team?",
+      "balance": "Balance evenly across team",
+      "minimize": "Minimize weekend work",
+      "not_relevant": "Not relevant for our team"
+    },
+    "stepPartTime": {
+      "title": "Do you have part-time staff?",
+      "description": "Part-time workers receive proportionally adjusted hour targets.",
+      "yes": "Yes",
+      "no": "No",
+      "workersAt": "worker(s) at",
+      "addRow": "Add group"
+    },
+    "stepUpload": {
+      "title": "Do you have an existing schedule to share?",
+      "description": "Attach a file (PDF, image, Excel, CSV) and add any comments. This helps us understand your current setup.",
+      "chooseFile": "Choose file…",
+      "commentLabel": "Comments about this schedule",
+      "commentPlaceholder": "Anything we should know about the existing schedule…",
+      "sizeError": "File is too large (max {max} MB).",
+      "typeError": "File type not supported. Please use PDF, PNG, JPG, XLSX, XLS, or CSV."
+    },
+    "note": {
+      "addNote": "Add a note",
+      "noteLabel": "Note",
+      "notePlaceholder": "Any additional context…"
+    }
   },
   "Footer": {
     "brand": "Shiftly",
