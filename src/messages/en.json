@@ -92,6 +92,7 @@
     "progressComplete": "All answered ✓",
     "back": "Back",
     "next": "Next",
+    "skip": "Skip",
     "q1Label": "What's your biggest scheduling challenge?",
     "q1Opt1": "Shift coverage gaps",
     "q1Opt2": "Last-minute changes",
