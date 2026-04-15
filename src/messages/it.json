@@ -86,6 +86,28 @@
     "errorMessage": "Qualcosa è andato storto. Riprova o scrivici a",
     "close": "Chiudi"
   },
+  "SchedulingWidget": {
+    "label": "Raccontaci delle tue sfide di pianificazione",
+    "progress": "{answered} di {total} risposto",
+    "progressComplete": "Tutto completato ✓",
+    "back": "Indietro",
+    "next": "Avanti",
+    "q1Label": "Qual è la tua sfida principale nella pianificazione?",
+    "q1Opt1": "Copertura dei turni",
+    "q1Opt2": "Cambiamenti dell'ultimo minuto",
+    "q1Opt3": "Disponibilità del personale",
+    "q1Opt4": "Conformità normativa",
+    "q2Label": "Quanti turni gestisci a settimana?",
+    "q2Opt1": "Meno di 20",
+    "q2Opt2": "20–50",
+    "q2Opt3": "50–100",
+    "q2Opt4": "Più di 100",
+    "q3Label": "Come gestisci attualmente la pianificazione?",
+    "q3Opt1": "Fogli di calcolo",
+    "q3Opt2": "Carta e lavagna",
+    "q3Opt3": "Altro software",
+    "q3Opt4": "Nessun sistema formale"
+  },
   "Footer": {
     "brand": "Shiftly",
     "tagline": "Pianificazione intelligente dei turni per team sanitari.",

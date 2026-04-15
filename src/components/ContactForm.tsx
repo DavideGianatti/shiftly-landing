@@ -8,6 +8,7 @@ import { submitContact, ContactActionState } from "@/lib/actions/contact";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CONTACT_EMAIL } from "@/lib/constants";
+import { SchedulingChallengesWidget } from "@/components/SchedulingChallengesWidget";
 
 const TEAM_SIZE_OPTIONS = ["1-10", "10-30", "30-100", "100+"] as const;
 
@@ -175,19 +176,7 @@ export function ContactForm({ onClose }: { onClose: () => void }) {
         </div>
       </div>
 
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="message" className="text-sm font-medium text-stone-700">
-          {t("messageLabel")}
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={3}
-          maxLength={1000}
-          placeholder={t("messagePlaceholder")}
-          className="resize-none rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-200"
-        />
-      </div>
+      <SchedulingChallengesWidget />
 
       <p className="text-xs text-coral-500 text-right">{t("requiredNote")}</p>
 

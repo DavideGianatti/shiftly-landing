@@ -86,6 +86,28 @@
     "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an",
     "close": "Schließen"
   },
+  "SchedulingWidget": {
+    "label": "Erzählen Sie uns von Ihren Planungsherausforderungen",
+    "progress": "{answered} von {total} beantwortet",
+    "progressComplete": "Alle beantwortet ✓",
+    "back": "Zurück",
+    "next": "Weiter",
+    "q1Label": "Was ist Ihre größte Herausforderung bei der Dienstplanung?",
+    "q1Opt1": "Schichtabdeckung",
+    "q1Opt2": "Kurzfristige Änderungen",
+    "q1Opt3": "Personalverfügbarkeit",
+    "q1Opt4": "Compliance & Vorschriften",
+    "q2Label": "Wie viele Schichten verwalten Sie pro Woche?",
+    "q2Opt1": "Weniger als 20",
+    "q2Opt2": "20–50",
+    "q2Opt3": "50–100",
+    "q2Opt4": "Mehr als 100",
+    "q3Label": "Wie verwalten Sie derzeit Ihren Dienstplan?",
+    "q3Opt1": "Tabellenkalkulationen",
+    "q3Opt2": "Papier & Whiteboard",
+    "q3Opt3": "Andere Software",
+    "q3Opt4": "Kein formales System"
+  },
   "Footer": {
     "brand": "Shiftly",
     "tagline": "Intelligente Dienstplanung für Gesundheitsteams.",

@@ -86,6 +86,28 @@
     "errorMessage": "Une erreur s'est produite. Veuillez réessayer ou nous écrire à",
     "close": "Fermer"
   },
+  "SchedulingWidget": {
+    "label": "Parlez-nous de vos défis de planification",
+    "progress": "{answered} sur {total} répondu",
+    "progressComplete": "Tout complété ✓",
+    "back": "Retour",
+    "next": "Suivant",
+    "q1Label": "Quel est votre plus grand défi en matière de planification ?",
+    "q1Opt1": "Couverture des shifts",
+    "q1Opt2": "Changements de dernière minute",
+    "q1Opt3": "Disponibilité du personnel",
+    "q1Opt4": "Conformité réglementaire",
+    "q2Label": "Combien de shifts gérez-vous par semaine ?",
+    "q2Opt1": "Moins de 20",
+    "q2Opt2": "20–50",
+    "q2Opt3": "50–100",
+    "q2Opt4": "Plus de 100",
+    "q3Label": "Comment gérez-vous actuellement vos plannings ?",
+    "q3Opt1": "Tableurs",
+    "q3Opt2": "Papier & tableau blanc",
+    "q3Opt3": "Un autre logiciel",
+    "q3Opt4": "Aucun système formel"
+  },
   "Footer": {
     "brand": "Shiftly",
     "tagline": "Planification intelligente pour les équipes de santé.",
