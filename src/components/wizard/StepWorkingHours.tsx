@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { WorkingHoursValue } from "./types";
-import { NoteField } from "./NoteField";
 import { inputXsClass } from "@/lib/classes";
 
 interface Props {
@@ -71,10 +70,6 @@ export function StepWorkingHours({ value, onChange }: Props) {
         </div>
       </div>
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

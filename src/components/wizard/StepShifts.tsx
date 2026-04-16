@@ -1,9 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Plus, Trash2 } from "lucide-react";
+import { Plus, Trash2, HelpCircle } from "lucide-react";
 import { ShiftsValue, ShiftDef, nextId } from "./types";
-import { NoteField } from "./NoteField";
 import { inputXsClass } from "@/lib/classes";
 
 function computeHours(start: string, end: string): string {
@@ -55,10 +54,10 @@ export function StepShifts({ value, onChange }: Props) {
 
   return (
     <div>
-      <p className="mb-1 text-sm font-semibold text-stone-800">
+      <p className="mb-0.5 text-sm font-semibold text-stone-800">
         {t("stepShifts.title")}
       </p>
-      <p className="mb-3 text-xs text-stone-500">{t("stepShifts.description")}</p>
+      <p className="mb-3 text-xs text-stone-400">{t("stepShifts.prefilledHint")}</p>
 
       <div className="flex flex-col gap-2">
         {value.shifts.map((shift) => (
@@ -85,7 +84,7 @@ export function StepShifts({ value, onChange }: Props) {
               </button>
             </div>
             {/* Row 2: start / end / hours / coverage */}
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+            <div className="flex items-center gap-x-3">
               <div className="flex items-center gap-1">
                 <span className="text-[10px] text-stone-400 whitespace-nowrap">
                   {t("stepShifts.startLabel")}
@@ -124,9 +123,15 @@ export function StepShifts({ value, onChange }: Props) {
                 />
               </div>
               <div className="flex items-center gap-1">
-                <span className="text-[10px] text-stone-400 whitespace-nowrap">
-                  {t("stepShifts.coverageLabel")}
-                </span>
+                <div className="relative flex items-center gap-0.5 group/tip">
+                  <span className="text-[10px] text-stone-400 whitespace-nowrap">
+                    {t("stepShifts.coverageLabel")}
+                  </span>
+                  <HelpCircle className="h-3.5 w-3.5 text-stone-400 cursor-default" />
+                  <div className="absolute bottom-full right-0 mb-1.5 hidden group-hover/tip:block w-48 rounded-md bg-stone-800 px-2.5 py-2 text-[10px] leading-relaxed text-white shadow-lg z-50 pointer-events-none">
+                    {t("stepShifts.coverageTooltip")}
+                  </div>
+                </div>
                 <input
                   type="number"
                   value={shift.coverage}
@@ -134,7 +139,7 @@ export function StepShifts({ value, onChange }: Props) {
                     updateShift(shift.id, "coverage", e.target.value)
                   }
                   placeholder="#"
-                  min="1"
+                  min="0"
                   className={`${inputXsClass} w-[48px]`}
                 />
               </div>
@@ -151,11 +156,6 @@ export function StepShifts({ value, onChange }: Props) {
         <Plus className="h-3.5 w-3.5" />
         {t("stepShifts.addShift")}
       </button>
-
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

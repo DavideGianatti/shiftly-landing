@@ -102,7 +102,10 @@
       "startLabel": "Début",
       "endLabel": "Fin",
       "hoursLabel": "Heures",
+      "dayOffName": "Repos",
+      "prefilledHint": "Nous avons déjà ajouté un jour de repos pour vous.",
       "coverageLabel": "Couverture",
+      "coverageTooltip": "Nombre minimum de personnel requis pour couvrir ce shift chaque jour.",
       "addShift": "Ajouter un shift",
       "removeShift": "Supprimer le shift"
     },
@@ -113,7 +116,8 @@
       "addPair": "Ajouter une transition",
       "minRestLabel": "Repos minimum entre shifts consécutifs",
       "hoursUnit": "heures",
-      "needShiftsHint": "Définissez d'abord vos shifts à l'étape 1."
+      "needShiftsHint": "Définissez d'abord vos shifts à l'étape 1.",
+      "autoLabel": "Détectées automatiquement depuis les horaires :"
     },
     "stepSoftTransitions": {
       "title": "Y a-t-il des transitions à éviter si possible ?",

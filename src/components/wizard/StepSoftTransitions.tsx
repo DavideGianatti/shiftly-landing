@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { SoftTransitionsValue, ShiftDef, TransitionPair } from "./types";
-import { NoteField } from "./NoteField";
 import { TransitionPairsEditor } from "./TransitionPairsEditor";
 
 interface Props {
@@ -33,10 +32,6 @@ export function StepSoftTransitions({ value, onChange, shifts }: Props) {
         shifts={shifts}
       />
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

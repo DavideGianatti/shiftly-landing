@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { WeekendBalance, WeekendValue } from "./types";
-import { NoteField } from "./NoteField";
 
 const OPTIONS: WeekendBalance[] = ["balance", "minimize", "not_relevant"];
 
@@ -38,10 +37,6 @@ export function StepWeekends({ value, onChange }: Props) {
         ))}
       </div>
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

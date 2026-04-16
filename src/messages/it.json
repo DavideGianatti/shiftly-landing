@@ -102,7 +102,10 @@
       "startLabel": "Inizio",
       "endLabel": "Fine",
       "hoursLabel": "Ore",
+      "dayOffName": "Riposo",
+      "prefilledHint": "Abbiamo già aggiunto un giorno di riposo per te.",
       "coverageLabel": "Copertura",
+      "coverageTooltip": "Numero minimo di personale necessario per coprire questo turno ogni giorno.",
       "addShift": "Aggiungi turno",
       "removeShift": "Rimuovi turno"
     },
@@ -113,7 +116,8 @@
       "addPair": "Aggiungi transizione",
       "minRestLabel": "Riposo minimo tra turni consecutivi",
       "hoursUnit": "ore",
-      "needShiftsHint": "Prima definisci i tuoi turni nel passaggio 1."
+      "needShiftsHint": "Prima definisci i tuoi turni nel passaggio 1.",
+      "autoLabel": "Rilevate automaticamente dagli orari:"
     },
     "stepSoftTransitions": {
       "title": "Ci sono transizioni da evitare se possibile?",

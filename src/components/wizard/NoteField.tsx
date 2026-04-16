@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 interface Props {
@@ -10,19 +9,6 @@ interface Props {
 
 export function NoteField({ value, onChange }: Props) {
   const t = useTranslations("SchedulingWidget");
-  const [open, setOpen] = useState(value.length > 0);
-
-  if (!open) {
-    return (
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="mt-3 text-xs text-stone-400 hover:text-stone-600 transition-colors"
-      >
-        + {t("note.addNote")}
-      </button>
-    );
-  }
 
   return (
     <div className="mt-3">

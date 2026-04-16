@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Plus, Trash2 } from "lucide-react";
 import { PartTimeRow, PartTimeValue, nextId } from "./types";
-import { NoteField } from "./NoteField";
 import { inputXsClass } from "@/lib/classes";
 
 interface Props {
@@ -104,10 +103,6 @@ export function StepPartTime({ value, onChange }: Props) {
         </div>
       )}
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

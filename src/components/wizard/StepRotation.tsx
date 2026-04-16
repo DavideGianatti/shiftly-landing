@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { RotationValue, ShiftDef } from "./types";
-import { NoteField } from "./NoteField";
 import { inputXsClass } from "@/lib/classes";
 
 const PRESET_LENGTHS = ["7", "10", "14", "28"];
@@ -47,10 +46,6 @@ export function StepRotation({ value, onChange, shifts }: Props) {
         <p className="mt-3 rounded-lg bg-stone-50 px-3 py-2.5 text-xs text-stone-400">
           {t("stepRotation.needShiftsHint")}
         </p>
-        <NoteField
-          value={value.note}
-          onChange={(note) => onChange({ ...value, note })}
-        />
       </div>
     );
   }
@@ -134,10 +129,6 @@ export function StepRotation({ value, onChange, shifts }: Props) {
         ))}
       </div>
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

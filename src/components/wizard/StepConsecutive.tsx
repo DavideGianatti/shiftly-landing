@@ -2,11 +2,9 @@
 
 import { useTranslations } from "next-intl";
 import { ConsecutivePreference, ConsecutiveValue, ShiftDef } from "./types";
-import { NoteField } from "./NoteField";
 
 const PREFS: ConsecutivePreference[] = [
   "none",
-  "prefer_different",
   "prefer_pairs",
   "max_2",
   "max_3",
@@ -38,10 +36,6 @@ export function StepConsecutive({ value, onChange, shifts }: Props) {
         <p className="mt-3 rounded-lg bg-stone-50 px-3 py-2.5 text-xs text-stone-400">
           {t("stepConsecutive.needShiftsHint")}
         </p>
-        <NoteField
-          value={value.note}
-          onChange={(note) => onChange({ ...value, note })}
-        />
       </div>
     );
   }
@@ -82,10 +76,6 @@ export function StepConsecutive({ value, onChange, shifts }: Props) {
         })}
       </div>
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

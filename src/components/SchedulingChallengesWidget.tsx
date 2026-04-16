@@ -10,6 +10,7 @@ import {
   WizardValues,
   INITIAL_WIZARD_VALUES,
 } from "./wizard/types";
+import { NoteField } from "./wizard/NoteField";
 import { StepShifts } from "./wizard/StepShifts";
 import { StepHardTransitions } from "./wizard/StepHardTransitions";
 import { StepSoftTransitions } from "./wizard/StepSoftTransitions";
@@ -36,7 +37,7 @@ const slideVariants: Variants = {
 
 function isAnswered(stepIndex: number, values: WizardValues): boolean {
   switch (stepIndex) {
-    case 0: return values.shifts.shifts.length > 0;
+    case 0: return values.shifts.shifts.some((s) => s.start && s.end && s.name.trim());
     case 1: return values.hardTransitions.pairs.length > 0 || values.hardTransitions.minRestHours !== "11";
     case 2: return values.softTransitions.pairs.length > 0;
     case 3: return values.workingHours.min !== "" || values.workingHours.max !== "";
@@ -137,7 +138,13 @@ export function SchedulingChallengesWidget() {
   const t = useTranslations("SchedulingWidget");
   const [isOpen, setIsOpen] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
-  const [values, setValues] = useState<WizardValues>(INITIAL_WIZARD_VALUES);
+  const [values, setValues] = useState<WizardValues>(() => ({
+    ...INITIAL_WIZARD_VALUES,
+    shifts: {
+      ...INITIAL_WIZARD_VALUES.shifts,
+      shifts: [{ id: "w0", name: t("stepShifts.dayOffName"), start: "", end: "", hours: "0", coverage: "0" }],
+    },
+  }));
   const [direction, setDirection] = useState(1);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -202,6 +209,35 @@ export function SchedulingChallengesWidget() {
 
   function setStep<K extends keyof WizardValues>(key: K, val: WizardValues[K]) {
     setValues((prev) => ({ ...prev, [key]: val }));
+  }
+
+  function getCurrentNote(): string {
+    switch (currentStep) {
+      case 0: return values.shifts.note;
+      case 1: return values.hardTransitions.note;
+      case 2: return values.softTransitions.note;
+      case 3: return values.workingHours.note;
+      case 4: return values.rotation.note;
+      case 5: return values.consecutive.note;
+      case 6: return values.weekends.note;
+      case 7: return values.partTime.note;
+      case 8: return values.upload.note;
+      default: return "";
+    }
+  }
+
+  function setCurrentNote(note: string) {
+    switch (currentStep) {
+      case 0: setStep("shifts", { ...values.shifts, note }); break;
+      case 1: setStep("hardTransitions", { ...values.hardTransitions, note }); break;
+      case 2: setStep("softTransitions", { ...values.softTransitions, note }); break;
+      case 3: setStep("workingHours", { ...values.workingHours, note }); break;
+      case 4: setStep("rotation", { ...values.rotation, note }); break;
+      case 5: setStep("consecutive", { ...values.consecutive, note }); break;
+      case 6: setStep("weekends", { ...values.weekends, note }); break;
+      case 7: setStep("partTime", { ...values.partTime, note }); break;
+      case 8: setStep("upload", { ...values.upload, note }); break;
+    }
   }
 
   const currentIsAnswered = isAnswered(currentStep, values) ||
@@ -331,7 +367,7 @@ export function SchedulingChallengesWidget() {
       <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
         <Dialog.Portal>
           <Dialog.Backdrop className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm transition-opacity duration-200 data-starting-style:opacity-0 data-ending-style:opacity-0" />
-          <Dialog.Popup className="fixed left-1/2 top-1/2 z-[60] flex h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-2xl border border-stone-200 bg-white shadow-xl transition-all duration-200 data-starting-style:opacity-0 data-starting-style:scale-95 data-ending-style:opacity-0 data-ending-style:scale-95 sm:max-w-md">
+          <Dialog.Popup className="fixed left-1/2 top-1/2 z-[60] flex h-[calc(100dvh-2rem)] w-[calc(100vw-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-2xl border border-stone-200 bg-white shadow-xl transition-all duration-200 data-starting-style:opacity-0 data-starting-style:scale-95 data-ending-style:opacity-0 data-ending-style:scale-95 sm:max-w-2xl">
             {/* Header */}
             <div className="shrink-0 px-6 pt-6 pb-0 sm:px-8 sm:pt-8">
               <div className="mb-4 flex items-start justify-between gap-4">
@@ -368,19 +404,25 @@ export function SchedulingChallengesWidget() {
             </div>
 
             {/* Step content — scrollable */}
-            <div className="flex-1 overflow-y-auto px-6 py-5 sm:px-8">
-              <AnimatePresence mode="wait" custom={direction}>
-                <motion.div
-                  key={currentStep}
-                  custom={direction}
-                  variants={slideVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                >
-                  {renderStep()}
-                </motion.div>
-              </AnimatePresence>
+            <div className="flex flex-col flex-1 overflow-y-auto px-6 py-5 sm:px-8">
+              <div className="flex-1">
+                <AnimatePresence mode="wait" custom={direction}>
+                  <motion.div
+                    key={currentStep}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                  >
+                    {renderStep()}
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+              <NoteField
+                value={getCurrentNote()}
+                onChange={setCurrentNote}
+              />
             </div>
 
             {/* Navigation */}
@@ -395,7 +437,7 @@ export function SchedulingChallengesWidget() {
                 >
                   ← {t("back")}
                 </button>
-                <span className="text-xs text-stone-300">
+                <span className="text-xs font-medium text-stone-500">
                   {currentStep + 1} / {TOTAL_STEPS}
                 </span>
                 {currentIsAnswered ? (

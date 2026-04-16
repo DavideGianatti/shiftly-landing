@@ -102,7 +102,10 @@
       "startLabel": "Start",
       "endLabel": "End",
       "hoursLabel": "Hours",
+      "dayOffName": "Day off",
+      "prefilledHint": "We've already added a day off for you.",
       "coverageLabel": "Coverage",
+      "coverageTooltip": "Minimum number of staff required to cover this shift each day.",
       "addShift": "Add shift",
       "removeShift": "Remove shift"
     },
@@ -113,7 +116,8 @@
       "addPair": "Add transition",
       "minRestLabel": "Minimum rest between consecutive shifts",
       "hoursUnit": "hours",
-      "needShiftsHint": "Define your shifts in step 1 first."
+      "needShiftsHint": "Define your shifts in step 1 first.",
+      "autoLabel": "Auto-detected from shift times:"
     },
     "stepSoftTransitions": {
       "title": "Are there shift transitions you'd prefer to avoid?",

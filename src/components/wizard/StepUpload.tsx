@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { Paperclip, X } from "lucide-react";
 import { UploadValue } from "./types";
-import { NoteField } from "./NoteField";
 
 const MAX_SIZE_MB = 10;
 const ACCEPT = ".pdf,.png,.jpg,.jpeg,.xlsx,.xls,.csv";
@@ -87,10 +86,6 @@ export function StepUpload({
         className="w-full resize-none rounded-lg border border-stone-200 bg-white px-3 py-2 text-xs text-stone-900 placeholder:text-stone-400 focus:border-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-200"
       />
 
-      <NoteField
-        value={value.note}
-        onChange={(note) => onChange({ ...value, note })}
-      />
     </div>
   );
 }

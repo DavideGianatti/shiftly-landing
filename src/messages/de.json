@@ -102,7 +102,10 @@
       "startLabel": "Beginn",
       "endLabel": "Ende",
       "hoursLabel": "Stunden",
+      "dayOffName": "Ruhetag",
+      "prefilledHint": "Wir haben bereits einen freien Tag für Sie hinzugefügt.",
       "coverageLabel": "Abdeckung",
+      "coverageTooltip": "Mindestanzahl an Personal, die diese Schicht täglich besetzen muss.",
       "addShift": "Schicht hinzufügen",
       "removeShift": "Schicht entfernen"
     },
@@ -113,7 +116,8 @@
       "addPair": "Übergang hinzufügen",
       "minRestLabel": "Mindestruhezeit zwischen aufeinanderfolgenden Schichten",
       "hoursUnit": "Stunden",
-      "needShiftsHint": "Definieren Sie zuerst Ihre Schichten in Schritt 1."
+      "needShiftsHint": "Definieren Sie zuerst Ihre Schichten in Schritt 1.",
+      "autoLabel": "Automatisch aus Schichtzeiten erkannt:"
     },
     "stepSoftTransitions": {
       "title": "Gibt es Schichtübergänge, die Sie möglichst vermeiden möchten?",
