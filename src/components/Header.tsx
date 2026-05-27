@@ -66,7 +66,16 @@ export function Header() {
         </nav>
 
         {/* Mobile nav */}
-        <div className="md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          <a
+            href={APP_LOGIN_URL}
+            className={cn(
+              buttonVariants({ size: "sm", variant: "ghost" }),
+              "rounded-full font-semibold text-stone-700 hover:text-stone-900 px-3"
+            )}
+          >
+            {t("login")}
+          </a>
           <LanguageSwitcher />
         </div>
       </div>
