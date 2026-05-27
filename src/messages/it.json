@@ -3,7 +3,8 @@
     "logo": "Shiftly",
     "features": "Funzionalità",
     "earlyAccess": "Accesso Anticipato",
-    "cta": "Richiedi una demo"
+    "cta": "Richiedi una demo",
+    "login": "Accedi"
   },
   "Hero": {
     "title": "Crea i turni del personale in pochi click, non in ore.",

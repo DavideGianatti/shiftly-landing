@@ -3,7 +3,8 @@
     "logo": "Shiftly",
     "features": "Features",
     "earlyAccess": "Early Access",
-    "cta": "Request a Demo"
+    "cta": "Request a Demo",
+    "login": "Log in"
   },
   "Hero": {
     "title": "Build staff schedules in a few clicks, not hours.",

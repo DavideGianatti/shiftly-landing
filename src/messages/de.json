@@ -3,7 +3,8 @@
     "logo": "Shiftly",
     "features": "Funktionen",
     "earlyAccess": "Frühzugang",
-    "cta": "Demo anfragen"
+    "cta": "Demo anfragen",
+    "login": "Anmelden"
   },
   "Hero": {
     "title": "Dienstpläne in wenigen Klicks erstellen, nicht in Stunden.",

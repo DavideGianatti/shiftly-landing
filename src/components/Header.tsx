@@ -7,6 +7,7 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useContactModal } from "@/components/ContactModalProvider";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { APP_LOGIN_URL } from "@/lib/constants";
 
 export function Header() {
   const t = useTranslations("Header");
@@ -44,6 +45,15 @@ export function Header() {
           </a>
           <div className="h-4 w-px bg-stone-200" />
           <LanguageSwitcher />
+          <a
+            href={APP_LOGIN_URL}
+            className={cn(
+              buttonVariants({ size: "sm", variant: "ghost" }),
+              "rounded-full font-semibold text-stone-700 hover:text-stone-900 px-4"
+            )}
+          >
+            {t("login")}
+          </a>
           <button
             onClick={openContactModal}
             className={cn(
