@@ -105,7 +105,7 @@ export async function submitContact(
 
       <div style="background:#e8602e;padding:24px 32px;border-radius:12px 12px 0 0;">
         <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;letter-spacing:-0.3px;">New demo request</h1>
-        <p style="margin:4px 0 0;font-size:13px;color:rgba(255,255,255,0.8);">Shiftly landing page</p>
+        <p style="margin:4px 0 0;font-size:13px;color:rgba(255,255,255,0.8);">Rosterly landing page</p>
       </div>
 
       <div style="padding:24px 32px;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 12px 12px;">
@@ -145,7 +145,7 @@ export async function submitContact(
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from: "Shiftly <onboarding@resend.dev>",
+      from: "Rosterly <onboarding@resend.dev>",
       to: CONTACT_EMAIL,
       replyTo: email,
       subject: `Demo request from ${name}`,

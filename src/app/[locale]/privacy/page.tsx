@@ -43,7 +43,7 @@ function PrivacyContent() {
         <Section title={t("controllerTitle")}>
           <p>{t("controllerText")}</p>
           <address className="mt-3 not-italic text-stone-700 font-medium">
-            Shiftly
+            Rosterly
             <br />
             {/* TODO: Add your registered business address here */}
             <a

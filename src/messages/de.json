@@ -1,6 +1,6 @@
 {
   "Header": {
-    "logo": "Shiftly",
+    "logo": "Rosterly",
     "features": "Funktionen",
     "earlyAccess": "Frühzugang",
     "cta": "Demo anfragen",
@@ -8,7 +8,7 @@
   },
   "Hero": {
     "title": "Dienstpläne in wenigen Klicks erstellen, nicht in Stunden.",
-    "subtitle": "Shiftly erstellt automatisch Dienstpläne für Gesundheitsteams — unter Berücksichtigung gesetzlicher Vorgaben, Wünsche und realer Einschränkungen.",
+    "subtitle": "Rosterly erstellt automatisch Dienstpläne für Gesundheitsteams — unter Berücksichtigung gesetzlicher Vorgaben, Wünsche und realer Einschränkungen.",
     "cta": "Demo anfragen",
     "secondaryCta": "So funktioniert's",
     "supporting": "Entwickelt für Gesundheitsteams mit komplexen Schichtplänen."
@@ -22,8 +22,8 @@
     "bullet4": "Risiko von Fehlern und ungerechten Dienstplänen."
   },
   "Solution": {
-    "title": "Das ist Shiftly",
-    "description": "Shiftly generiert automatisch optimale Dienstpläne in wenigen Klicks — unter Berücksichtigung gesetzlicher Regeln, Teambalance und Wünsche. Keine Tabellen. Kein Raten. Keine verschwendete Zeit."
+    "title": "Das ist Rosterly",
+    "description": "Rosterly generiert automatisch optimale Dienstpläne in wenigen Klicks — unter Berücksichtigung gesetzlicher Regeln, Teambalance und Wünsche. Keine Tabellen. Kein Raten. Keine verschwendete Zeit."
   },
   "Features": {
     "title": "Entwickelt für die Realität der Gesundheitsplanung",
@@ -41,19 +41,19 @@
     "feature6Description": "Mitarbeiter können Wunschschichten und Tausche direkt in der App beantragen.",
     "sickCallBadge": "Intelligente Krankmeldungsverwaltung",
     "sickCallTitle": "Kurzfristige Änderungen schnell bewältigen",
-    "sickCallDescription": "Wenn sich jemand krankmeldet oder einen Schichttausch beantragt, zeigt Shiftly sofort, wer verfügbar ist — so lässt sich das Problem in wenigen Klicks lösen."
+    "sickCallDescription": "Wenn sich jemand krankmeldet oder einen Schichttausch beantragt, zeigt Rosterly sofort, wer verfügbar ist — so lässt sich das Problem in wenigen Klicks lösen."
   },
   "Differentiation": {
     "title": "Entwickelt von Menschen, die den Job selbst gemacht haben",
-    "description": "Shiftly wurde von Menschen entwickelt, die echte Teams geführt und die Frustration manueller Planung erlebt haben. Wir haben Shiftly gebaut, um Stunden repetitiver Arbeit zu eliminieren und die Planung einfach, fair und effizient zu machen."
+    "description": "Rosterly wurde von Menschen entwickelt, die echte Teams geführt und die Frustration manueller Planung erlebt haben. Wir haben Rosterly gebaut, um Stunden repetitiver Arbeit zu eliminieren und die Planung einfach, fair und effizient zu machen."
   },
   "BrandStatement": {
     "title": "Wir entwickeln Software für Menschen, die sich um andere kümmern",
-    "description": "Shiftly existiert, um die Personalplanung zu vereinfachen, damit sich Gesundheitsteams auf das konzentrieren können, was wirklich zählt: die Betreuung von Menschen."
+    "description": "Rosterly existiert, um die Personalplanung zu vereinfachen, damit sich Gesundheitsteams auf das konzentrieren können, was wirklich zählt: die Betreuung von Menschen."
   },
   "EarlyAccess": {
     "title": "Wir suchen frühe Partner",
-    "description": "Wir arbeiten derzeit mit einer begrenzten Anzahl von Gesundheitsteams zusammen, um Shiftly zu testen und zu verbessern. Werden Sie früher Partner und gestalten Sie die Zukunft der Dienstplanung mit.",
+    "description": "Wir arbeiten derzeit mit einer begrenzten Anzahl von Gesundheitsteams zusammen, um Rosterly zu testen und zu verbessern. Werden Sie früher Partner und gestalten Sie die Zukunft der Dienstplanung mit.",
     "cta": "Demo anfragen",
     "perk1": "Direkter Zugang zum Gründerteam",
     "perk2": "Gestalten Sie die Produkt-Roadmap mit",
@@ -88,7 +88,7 @@
     "close": "Schließen"
   },
   "SchedulingWidget": {
-    "label": "Helfen Sie uns, Shiftly für Ihr Team zu konfigurieren",
+    "label": "Helfen Sie uns, Rosterly für Ihr Team zu konfigurieren",
     "progress": "{answered} von {total} beantwortet",
     "progressComplete": "Alle beantwortet ✓",
     "back": "Zurück",
@@ -183,7 +183,7 @@
     }
   },
   "Footer": {
-    "brand": "Shiftly",
+    "brand": "Rosterly",
     "tagline": "Intelligente Dienstplanung für Gesundheitsteams.",
     "contact": "Kontakt",
     "privacy": "Datenschutz",
@@ -220,7 +220,7 @@
     "title": "Datenschutzerklärung",
     "lastUpdated": "Letzte Aktualisierung: {date}",
     "introTitle": "1. Einleitung",
-    "introText": "Diese Datenschutzerklärung erläutert, wie Shiftly (\"wir\", \"uns\", \"unser\") personenbezogene Daten erhebt, verwendet und schützt, wenn Sie unsere Website besuchen. Wir verpflichten uns, Ihre Daten verantwortungsvoll und in Übereinstimmung mit dem Schweizer Bundesgesetz über den Datenschutz (DSG/nDSG) und der EU-Datenschutz-Grundverordnung (DSGVO) zu behandeln.",
+    "introText": "Diese Datenschutzerklärung erläutert, wie Rosterly (\"wir\", \"uns\", \"unser\") personenbezogene Daten erhebt, verwendet und schützt, wenn Sie unsere Website besuchen. Wir verpflichten uns, Ihre Daten verantwortungsvoll und in Übereinstimmung mit dem Schweizer Bundesgesetz über den Datenschutz (DSG/nDSG) und der EU-Datenschutz-Grundverordnung (DSGVO) zu behandeln.",
     "controllerTitle": "2. Verantwortliche Stelle",
     "controllerText": "Die für die Verarbeitung Ihrer personenbezogenen Daten verantwortliche Stelle ist:",
     "dataCollectedTitle": "3. Daten, die wir erheben",
@@ -238,7 +238,7 @@
     "purposeTitle": "4. Zweck und Rechtsgrundlage",
     "purposeText": "Wir verwenden die von Ihnen über das Kontaktformular übermittelten Daten ausschließlich, um:",
     "purposeRespond": "Auf Ihre Anfrage oder Demo-Anfrage zu antworten.",
-    "purposeDeliver": "Ihnen die von Ihnen angeforderten Informationen über Shiftly bereitzustellen.",
+    "purposeDeliver": "Ihnen die von Ihnen angeforderten Informationen über Rosterly bereitzustellen.",
     "legalBasisText": "Die Rechtsgrundlage für die Verarbeitung ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) durch das freiwillige Absenden des Formulars sowie unser berechtigtes Interesse, auf Ihre Anfrage zu antworten (Art. 6 Abs. 1 lit. f DSGVO). Nach dem Schweizer DSG ist die Verarbeitung rechtmäßig, da sie im Zusammenhang mit einem vorvertraglichen Verhältnis und nach Treu und Glauben erfolgt.",
     "thirdPartyTitle": "5. Drittanbieter-Dienste",
     "thirdPartyIntro": "Wir nutzen die folgenden Drittanbieter-Dienste für den Betrieb dieser Website:",

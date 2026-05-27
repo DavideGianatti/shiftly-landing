@@ -39,7 +39,7 @@ export function Footer() {
               </Link>
             </div>
             <p className="text-xs text-stone-400">
-              &copy; {year} Shiftly. {t("rights")}
+              &copy; {year} Rosterly. {t("rights")}
             </p>
           </div>
         </div>

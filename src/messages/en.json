@@ -1,6 +1,6 @@
 {
   "Header": {
-    "logo": "Shiftly",
+    "logo": "Rosterly",
     "features": "Features",
     "earlyAccess": "Early Access",
     "cta": "Request a Demo",
@@ -8,7 +8,7 @@
   },
   "Hero": {
     "title": "Build staff schedules in a few clicks, not hours.",
-    "subtitle": "Shiftly automatically creates staff schedules for healthcare teams — respecting legal requirements, preferences, and real-world constraints.",
+    "subtitle": "Rosterly automatically creates staff schedules for healthcare teams — respecting legal requirements, preferences, and real-world constraints.",
     "cta": "Request a Demo",
     "secondaryCta": "See how it works",
     "supporting": "Built for healthcare teams managing complex shift schedules."
@@ -22,8 +22,8 @@
     "bullet4": "Risk of mistakes and unfair schedules."
   },
   "Solution": {
-    "title": "Meet Shiftly",
-    "description": "Shiftly automatically generates optimal staff schedules in a few clicks — taking into account legal rules, team balance and preferences. No spreadsheets. No guesswork. No wasted time."
+    "title": "Meet Rosterly",
+    "description": "Rosterly automatically generates optimal staff schedules in a few clicks — taking into account legal rules, team balance and preferences. No spreadsheets. No guesswork. No wasted time."
   },
   "Features": {
     "title": "Built for real-world healthcare scheduling",
@@ -41,19 +41,19 @@
     "feature6Description": "Employees can request specific shifts and swaps directly in the app.",
     "sickCallBadge": "Smart sick call handling",
     "sickCallTitle": "Handle last-minute changes quickly",
-    "sickCallDescription": "When someone calls in sick or requests a shift change, Shiftly immediately shows you who's available to swap — so you can resolve it in a few clicks."
+    "sickCallDescription": "When someone calls in sick or requests a shift change, Rosterly immediately shows you who's available to swap — so you can resolve it in a few clicks."
   },
   "Differentiation": {
     "title": "Built by people who actually did the job",
-    "description": "Shiftly was created by people who managed real teams and experienced the frustration of manual scheduling. We built Shiftly to eliminate hours of repetitive work and make scheduling simple, fair and efficient."
+    "description": "Rosterly was created by people who managed real teams and experienced the frustration of manual scheduling. We built Rosterly to eliminate hours of repetitive work and make scheduling simple, fair and efficient."
   },
   "BrandStatement": {
     "title": "We build software for the people who care for others",
-    "description": "Shiftly exists to simplify workforce scheduling so healthcare teams can focus on what truly matters: caring for people."
+    "description": "Rosterly exists to simplify workforce scheduling so healthcare teams can focus on what truly matters: caring for people."
   },
   "EarlyAccess": {
     "title": "We are looking for early partners",
-    "description": "We are currently working with a limited number of healthcare teams to test and improve Shiftly. Join as an early partner and help shape the future of staff scheduling.",
+    "description": "We are currently working with a limited number of healthcare teams to test and improve Rosterly. Join as an early partner and help shape the future of staff scheduling.",
     "cta": "Request a Demo",
     "perk1": "Direct access to the founding team",
     "perk2": "Shape the product roadmap",
@@ -88,7 +88,7 @@
     "close": "Close"
   },
   "SchedulingWidget": {
-    "label": "Help us configure Shiftly for your team",
+    "label": "Help us configure Rosterly for your team",
     "progress": "{answered} of {total} answered",
     "progressComplete": "All answered ✓",
     "back": "Back",
@@ -183,7 +183,7 @@
     }
   },
   "Footer": {
-    "brand": "Shiftly",
+    "brand": "Rosterly",
     "tagline": "Smart staff scheduling for healthcare teams.",
     "contact": "Contact",
     "privacy": "Privacy Policy",
@@ -220,7 +220,7 @@
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: {date}",
     "introTitle": "1. Introduction",
-    "introText": "This privacy policy explains how Shiftly (\"we\", \"us\", \"our\") collects, uses, and protects personal data when you visit our website. We are committed to handling your data responsibly and in accordance with the Swiss Federal Act on Data Protection (FADP/nDSG) and the EU General Data Protection Regulation (GDPR).",
+    "introText": "This privacy policy explains how Rosterly (\"we\", \"us\", \"our\") collects, uses, and protects personal data when you visit our website. We are committed to handling your data responsibly and in accordance with the Swiss Federal Act on Data Protection (FADP/nDSG) and the EU General Data Protection Regulation (GDPR).",
     "controllerTitle": "2. Data Controller",
     "controllerText": "The entity responsible for processing your personal data is:",
     "dataCollectedTitle": "3. Data We Collect",
@@ -238,7 +238,7 @@
     "purposeTitle": "4. Purpose and Legal Basis",
     "purposeText": "We use the data you submit through the contact form exclusively to:",
     "purposeRespond": "Respond to your inquiry or demo request.",
-    "purposeDeliver": "Provide you with information about Shiftly that you have requested.",
+    "purposeDeliver": "Provide you with information about Rosterly that you have requested.",
     "legalBasisText": "The legal basis for processing is your consent (Art. 6(1)(a) GDPR) given by voluntarily submitting the form, and our legitimate interest in responding to your request (Art. 6(1)(f) GDPR). Under the Swiss FADP, processing is lawful as it is carried out in connection with a pre-contractual relationship and in good faith.",
     "thirdPartyTitle": "5. Third-Party Services",
     "thirdPartyIntro": "We use the following third-party services to operate this website:",

@@ -1,6 +1,6 @@
 {
   "Header": {
-    "logo": "Shiftly",
+    "logo": "Rosterly",
     "features": "Funzionalità",
     "earlyAccess": "Accesso Anticipato",
     "cta": "Richiedi una demo",
@@ -8,7 +8,7 @@
   },
   "Hero": {
     "title": "Crea i turni del personale in pochi click, non in ore.",
-    "subtitle": "Shiftly crea automaticamente i turni per i team sanitari — rispettando requisiti legali, preferenze e vincoli reali.",
+    "subtitle": "Rosterly crea automaticamente i turni per i team sanitari — rispettando requisiti legali, preferenze e vincoli reali.",
     "cta": "Richiedi una demo",
     "secondaryCta": "Scopri come funziona",
     "supporting": "Pensato per i team sanitari che gestiscono turni complessi."
@@ -22,8 +22,8 @@
     "bullet4": "Rischio di errori e turni iniqui."
   },
   "Solution": {
-    "title": "Scopri Shiftly",
-    "description": "Shiftly genera automaticamente turni ottimali in pochi click — tenendo conto delle regole legali, dell'equilibrio del team e delle preferenze. Niente fogli di calcolo. Niente congetture. Niente tempo sprecato."
+    "title": "Scopri Rosterly",
+    "description": "Rosterly genera automaticamente turni ottimali in pochi click — tenendo conto delle regole legali, dell'equilibrio del team e delle preferenze. Niente fogli di calcolo. Niente congetture. Niente tempo sprecato."
   },
   "Features": {
     "title": "Pensato per la pianificazione sanitaria reale",
@@ -41,19 +41,19 @@
     "feature6Description": "I dipendenti possono richiedere turni specifici e scambi direttamente nell'app.",
     "sickCallBadge": "Gestione intelligente delle malattie",
     "sickCallTitle": "Gestisci i cambiamenti dell'ultimo minuto rapidamente",
-    "sickCallDescription": "Quando qualcuno si ammala o richiede un cambio di turno, Shiftly mostra subito chi è disponibile a coprire — così puoi risolvere in pochi click."
+    "sickCallDescription": "Quando qualcuno si ammala o richiede un cambio di turno, Rosterly mostra subito chi è disponibile a coprire — così puoi risolvere in pochi click."
   },
   "Differentiation": {
     "title": "Creato da chi ha fatto davvero questo lavoro",
-    "description": "Shiftly è stato creato da persone che hanno gestito team reali e hanno vissuto la frustrazione della pianificazione manuale. Abbiamo costruito Shiftly per eliminare ore di lavoro ripetitivo e rendere la pianificazione semplice, equa ed efficiente."
+    "description": "Rosterly è stato creato da persone che hanno gestito team reali e hanno vissuto la frustrazione della pianificazione manuale. Abbiamo costruito Rosterly per eliminare ore di lavoro ripetitivo e rendere la pianificazione semplice, equa ed efficiente."
   },
   "BrandStatement": {
     "title": "Creiamo software per chi si prende cura degli altri",
-    "description": "Shiftly esiste per semplificare la pianificazione del personale, affinché i team sanitari possano concentrarsi su ciò che conta davvero: prendersi cura delle persone."
+    "description": "Rosterly esiste per semplificare la pianificazione del personale, affinché i team sanitari possano concentrarsi su ciò che conta davvero: prendersi cura delle persone."
   },
   "EarlyAccess": {
     "title": "Cerchiamo partner per la fase iniziale",
-    "description": "Attualmente collaboriamo con un numero limitato di team sanitari per testare e migliorare Shiftly. Unisciti come partner iniziale e contribuisci a plasmare il futuro della pianificazione dei turni.",
+    "description": "Attualmente collaboriamo con un numero limitato di team sanitari per testare e migliorare Rosterly. Unisciti come partner iniziale e contribuisci a plasmare il futuro della pianificazione dei turni.",
     "cta": "Richiedi una demo",
     "perk1": "Accesso diretto al team fondatore",
     "perk2": "Contribuisci al roadmap del prodotto",
@@ -88,7 +88,7 @@
     "close": "Chiudi"
   },
   "SchedulingWidget": {
-    "label": "Aiutaci a configurare Shiftly per il tuo team",
+    "label": "Aiutaci a configurare Rosterly per il tuo team",
     "progress": "{answered} di {total} risposto",
     "progressComplete": "Tutto completato ✓",
     "back": "Indietro",
@@ -183,7 +183,7 @@
     }
   },
   "Footer": {
-    "brand": "Shiftly",
+    "brand": "Rosterly",
     "tagline": "Pianificazione intelligente dei turni per team sanitari.",
     "contact": "Contatti",
     "privacy": "Informativa sulla Privacy",
@@ -220,7 +220,7 @@
     "title": "Informativa sulla Privacy",
     "lastUpdated": "Ultimo aggiornamento: {date}",
     "introTitle": "1. Introduzione",
-    "introText": "La presente informativa sulla privacy spiega come Shiftly (\"noi\", \"nostro\") raccoglie, utilizza e protegge i dati personali quando visiti il nostro sito web. Ci impegniamo a trattare i tuoi dati in modo responsabile e in conformità con la Legge federale svizzera sulla protezione dei dati (LPD/nDSG) e il Regolamento generale sulla protezione dei dati dell'UE (GDPR).",
+    "introText": "La presente informativa sulla privacy spiega come Rosterly (\"noi\", \"nostro\") raccoglie, utilizza e protegge i dati personali quando visiti il nostro sito web. Ci impegniamo a trattare i tuoi dati in modo responsabile e in conformità con la Legge federale svizzera sulla protezione dei dati (LPD/nDSG) e il Regolamento generale sulla protezione dei dati dell'UE (GDPR).",
     "controllerTitle": "2. Titolare del trattamento",
     "controllerText": "Il soggetto responsabile del trattamento dei tuoi dati personali è:",
     "dataCollectedTitle": "3. Dati che raccogliamo",
@@ -238,7 +238,7 @@
     "purposeTitle": "4. Finalità e base giuridica",
     "purposeText": "Utilizziamo i dati da te inviati tramite il modulo di contatto esclusivamente per:",
     "purposeRespond": "Rispondere alla tua richiesta o richiesta di demo.",
-    "purposeDeliver": "Fornirti informazioni su Shiftly che hai richiesto.",
+    "purposeDeliver": "Fornirti informazioni su Rosterly che hai richiesto.",
     "legalBasisText": "La base giuridica del trattamento è il tuo consenso (Art. 6(1)(a) GDPR) dato con l'invio volontario del modulo, e il nostro legittimo interesse a rispondere alla tua richiesta (Art. 6(1)(f) GDPR). Ai sensi della LPD svizzera, il trattamento è lecito in quanto effettuato nell'ambito di un rapporto precontrattuale e in buona fede.",
     "thirdPartyTitle": "5. Servizi di terze parti",
     "thirdPartyIntro": "Utilizziamo i seguenti servizi di terze parti per il funzionamento di questo sito web:",

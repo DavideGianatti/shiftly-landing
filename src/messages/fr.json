@@ -1,6 +1,6 @@
 {
   "Header": {
-    "logo": "Shiftly",
+    "logo": "Rosterly",
     "features": "Fonctionnalités",
     "earlyAccess": "Accès Anticipé",
     "cta": "Demander une démo",
@@ -8,7 +8,7 @@
   },
   "Hero": {
     "title": "Créez les plannings en quelques clics, pas en heures.",
-    "subtitle": "Shiftly crée automatiquement les plannings pour les équipes de santé — en respectant les exigences légales, les préférences et les contraintes réelles.",
+    "subtitle": "Rosterly crée automatiquement les plannings pour les équipes de santé — en respectant les exigences légales, les préférences et les contraintes réelles.",
     "cta": "Demander une démo",
     "secondaryCta": "Voir comment ça marche",
     "supporting": "Conçu pour les équipes de santé gérant des plannings complexes."
@@ -22,8 +22,8 @@
     "bullet4": "Un risque d'erreurs et de plannings injustes."
   },
   "Solution": {
-    "title": "Découvrez Shiftly",
-    "description": "Shiftly génère automatiquement des plannings optimaux en quelques clics — en tenant compte des règles légales, de l'équilibre de l'équipe et des préférences. Plus de tableurs. Plus de devinettes. Plus de temps perdu."
+    "title": "Découvrez Rosterly",
+    "description": "Rosterly génère automatiquement des plannings optimaux en quelques clics — en tenant compte des règles légales, de l'équilibre de l'équipe et des préférences. Plus de tableurs. Plus de devinettes. Plus de temps perdu."
   },
   "Features": {
     "title": "Conçu pour la planification de santé réelle",
@@ -41,19 +41,19 @@
     "feature6Description": "Les employés peuvent demander des gardes spécifiques et des échanges directement dans l'app.",
     "sickCallBadge": "Gestion intelligente des arrêts maladie",
     "sickCallTitle": "Gérez les changements de dernière minute rapidement",
-    "sickCallDescription": "Quand quelqu'un se déclare malade ou demande un échange de garde, Shiftly vous montre immédiatement qui est disponible — vous pouvez résoudre ça en quelques clics."
+    "sickCallDescription": "Quand quelqu'un se déclare malade ou demande un échange de garde, Rosterly vous montre immédiatement qui est disponible — vous pouvez résoudre ça en quelques clics."
   },
   "Differentiation": {
     "title": "Créé par des gens qui ont vraiment fait ce travail",
-    "description": "Shiftly a été créé par des personnes qui ont géré de vraies équipes et vécu la frustration de la planification manuelle. Nous avons construit Shiftly pour éliminer des heures de travail répétitif et rendre la planification simple, équitable et efficace."
+    "description": "Rosterly a été créé par des personnes qui ont géré de vraies équipes et vécu la frustration de la planification manuelle. Nous avons construit Rosterly pour éliminer des heures de travail répétitif et rendre la planification simple, équitable et efficace."
   },
   "BrandStatement": {
     "title": "Nous créons des logiciels pour ceux qui prennent soin des autres",
-    "description": "Shiftly existe pour simplifier la planification du personnel afin que les équipes de santé puissent se concentrer sur ce qui compte vraiment : prendre soin des gens."
+    "description": "Rosterly existe pour simplifier la planification du personnel afin que les équipes de santé puissent se concentrer sur ce qui compte vraiment : prendre soin des gens."
   },
   "EarlyAccess": {
     "title": "Nous recherchons des partenaires pionniers",
-    "description": "Nous travaillons actuellement avec un nombre limité d'équipes de santé pour tester et améliorer Shiftly. Rejoignez-nous en tant que partenaire pionnier et contribuez à façonner l'avenir de la planification des gardes.",
+    "description": "Nous travaillons actuellement avec un nombre limité d'équipes de santé pour tester et améliorer Rosterly. Rejoignez-nous en tant que partenaire pionnier et contribuez à façonner l'avenir de la planification des gardes.",
     "cta": "Demander une démo",
     "perk1": "Accès direct à l'équipe fondatrice",
     "perk2": "Contribuez à la feuille de route du produit",
@@ -88,7 +88,7 @@
     "close": "Fermer"
   },
   "SchedulingWidget": {
-    "label": "Aidez-nous à configurer Shiftly pour votre équipe",
+    "label": "Aidez-nous à configurer Rosterly pour votre équipe",
     "progress": "{answered} sur {total} répondu",
     "progressComplete": "Tout complété ✓",
     "back": "Retour",
@@ -183,7 +183,7 @@
     }
   },
   "Footer": {
-    "brand": "Shiftly",
+    "brand": "Rosterly",
     "tagline": "Planification intelligente pour les équipes de santé.",
     "contact": "Contact",
     "privacy": "Politique de confidentialité",
@@ -220,7 +220,7 @@
     "title": "Politique de confidentialité",
     "lastUpdated": "Dernière mise à jour : {date}",
     "introTitle": "1. Introduction",
-    "introText": "La présente politique de confidentialité explique comment Shiftly (\"nous\", \"notre\") collecte, utilise et protège les données personnelles lorsque vous visitez notre site web. Nous nous engageons à traiter vos données de manière responsable et conformément à la Loi fédérale suisse sur la protection des données (LPD/nLPD) et au Règlement général sur la protection des données de l'UE (RGPD).",
+    "introText": "La présente politique de confidentialité explique comment Rosterly (\"nous\", \"notre\") collecte, utilise et protège les données personnelles lorsque vous visitez notre site web. Nous nous engageons à traiter vos données de manière responsable et conformément à la Loi fédérale suisse sur la protection des données (LPD/nLPD) et au Règlement général sur la protection des données de l'UE (RGPD).",
     "controllerTitle": "2. Responsable du traitement",
     "controllerText": "Le responsable du traitement de vos données personnelles est :",
     "dataCollectedTitle": "3. Données que nous collectons",
@@ -238,7 +238,7 @@
     "purposeTitle": "4. Finalité et base juridique",
     "purposeText": "Nous utilisons les données que vous soumettez via le formulaire de contact exclusivement pour :",
     "purposeRespond": "Répondre à votre demande ou demande de démo.",
-    "purposeDeliver": "Vous fournir les informations sur Shiftly que vous avez demandées.",
+    "purposeDeliver": "Vous fournir les informations sur Rosterly que vous avez demandées.",
     "legalBasisText": "La base juridique du traitement est votre consentement (Art. 6(1)(a) RGPD) donné par la soumission volontaire du formulaire, et notre intérêt légitime à répondre à votre demande (Art. 6(1)(f) RGPD). En vertu de la LPD suisse, le traitement est licite car il est effectué dans le cadre d'une relation précontractuelle et de bonne foi.",
     "thirdPartyTitle": "5. Services tiers",
     "thirdPartyIntro": "Nous utilisons les services tiers suivants pour le fonctionnement de ce site web :",

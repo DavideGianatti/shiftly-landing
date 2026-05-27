@@ -1,6 +1,6 @@
-# Shiftly Landing Page
+# Rosterly Landing Page
 
-Marketing landing page for Shiftly — healthcare staff scheduling SaaS. Deployed on Vercel. No backend.
+Marketing landing page for Rosterly — healthcare staff scheduling SaaS. Deployed on Vercel. No backend.
 
 ## Stack
 Next.js 15, React 19, TypeScript, Tailwind CSS 4, Shadcn/ui (Button + Sheet), next-intl (en/it/de/fr), Framer Motion, Lucide icons.
