@@ -145,7 +145,7 @@ export async function submitContact(
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from: "Rosterly <onboarding@resend.dev>",
+      from: "Rosterly <noreply@rosterlyplan.com>",
       to: CONTACT_EMAIL,
       replyTo: email,
       subject: `Demo request from ${name}`,
