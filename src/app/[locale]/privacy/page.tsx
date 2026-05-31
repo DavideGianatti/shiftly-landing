@@ -2,9 +2,9 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
-// TODO: Replace with your registered business address
-const PRIVACY_CONTACT_EMAIL = "davidegianatti@gmail.com";
-const LAST_UPDATED = "2026-04-10";
+const PRIVACY_CONTACT_EMAIL = "privacy@rosterlyplan.com";
+const LAST_UPDATED = "2026-05-31";
+const LEONARDO_ADDRESS_LINES = ["<<TODO: Leonardo's Zurich address>>", "Switzerland"];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -39,20 +39,46 @@ function PrivacyContent() {
           <p>{t("introText")}</p>
         </Section>
 
-        {/* 2. Controller */}
+        {/* 2. Controllers */}
         <Section title={t("controllerTitle")}>
           <p>{t("controllerText")}</p>
-          <address className="mt-3 not-italic text-stone-700 font-medium">
-            Rosterly
-            <br />
-            {/* TODO: Add your registered business address here */}
-            <a
-              href={`mailto:${PRIVACY_CONTACT_EMAIL}`}
-              className="text-coral-500 underline hover:text-coral-600"
-            >
-              {PRIVACY_CONTACT_EMAIL}
-            </a>
-          </address>
+          <div className="mt-4 not-italic text-stone-700">
+            <p className="font-semibold">{t("controllerJointLabel")}</p>
+            <div className="mt-3 grid gap-4 sm:grid-cols-2">
+              <address className="not-italic">
+                <div className="font-medium">Davide Gianatti</div>
+                <div className="text-sm text-stone-600">
+                  Via Como 411
+                  <br />
+                  22041 Colverde (CO)
+                  <br />
+                  Italy
+                </div>
+              </address>
+              <address className="not-italic">
+                <div className="font-medium">Leonardo Graziano Tatti</div>
+                <div className="text-sm text-stone-600">
+                  {LEONARDO_ADDRESS_LINES.map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i < LEONARDO_ADDRESS_LINES.length - 1 && <br />}
+                    </span>
+                  ))}
+                </div>
+              </address>
+            </div>
+            <div className="mt-3">
+              <a
+                href={`mailto:${PRIVACY_CONTACT_EMAIL}`}
+                className="text-coral-500 underline hover:text-coral-600"
+              >
+                {PRIVACY_CONTACT_EMAIL}
+              </a>
+            </div>
+            <p className="mt-3 text-sm text-stone-500">
+              {t("controllerNoRepresentative")}
+            </p>
+          </div>
         </Section>
 
         {/* 3. Data we collect */}
@@ -118,12 +144,17 @@ function PrivacyContent() {
           <p className="mt-3">{t("cookiesNone")}</p>
         </Section>
 
-        {/* 8. Data retention */}
+        {/* 8. Security measures */}
+        <Section title={t("securityTitle")}>
+          <p>{t("securityText")}</p>
+        </Section>
+
+        {/* 9. Data retention */}
         <Section title={t("retentionTitle")}>
           <p>{t("retentionText")}</p>
         </Section>
 
-        {/* 9. Your rights */}
+        {/* 10. Your rights */}
         <Section title={t("rightsTitle")}>
           <p>{t("rightsIntro")}</p>
           <ul className="mt-2 list-disc pl-5 space-y-1">
@@ -147,17 +178,17 @@ function PrivacyContent() {
           <p className="mt-3">{t("rightsComplaint")}</p>
         </Section>
 
-        {/* 10. Children */}
+        {/* 11. Children */}
         <Section title={t("childrenTitle")}>
           <p>{t("childrenText")}</p>
         </Section>
 
-        {/* 11. Changes */}
+        {/* 12. Changes */}
         <Section title={t("changesTitle")}>
           <p>{t("changesText")}</p>
         </Section>
 
-        {/* 12. Contact */}
+        {/* 13. Contact */}
         <Section title={t("contactTitle")}>
           <p>
             {t("contactText")}{" "}
