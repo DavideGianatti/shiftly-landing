@@ -4,7 +4,11 @@ import { routing } from "@/i18n/routing";
 
 const PRIVACY_CONTACT_EMAIL = "privacy@rosterlyplan.com";
 const LAST_UPDATED = "2026-05-31";
-const LEONARDO_ADDRESS_LINES = ["<<TODO: Leonardo's Zurich address>>", "Switzerland"];
+const LEONARDO_ADDRESS_LINES = [
+  "Schwyzerstrasse 6",
+  "8805 Richterswil",
+  "Switzerland",
+];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
