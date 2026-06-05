@@ -32,3 +32,6 @@ After every relevant feature or fix, run `npm run build` to verify it compiles, 
 - NO: "AI powered", "revolutionizing", "in seconds", "instantly"
 - USE: "in a few clicks", "quickly"
 - Primary: coral-500 (#e8602e). Warm cream bg. Inter font. Minimalist.
+
+## Privacy
+- After any change that affects data collection or third-party services (contact-form fields, a new SDK/sub-processor such as Resend or Vercel, analytics/tracking), re-read the privacy policy (`src/app/[locale]/privacy/page.tsx` and the `Privacy` keys in `src/messages/{en,it,de,fr}.json`) and notify me if it needs updating. Keep all four locales consistent.
