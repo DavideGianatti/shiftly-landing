@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 
 // TODO: Replace with your registered business address
 const PRIVACY_CONTACT_EMAIL = "davidegianatti@gmail.com";
-const LAST_UPDATED = "2026-04-10";
+const LAST_UPDATED = "2026-06-05";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -97,6 +97,9 @@ function PrivacyContent() {
             </li>
             <li>
               <strong>Resend Inc.</strong> — {t("thirdPartyResend")}
+            </li>
+            <li>
+              <strong>Google LLC</strong> — {t("thirdPartyGoogle")}
             </li>
           </ul>
           <p className="mt-3">{t("thirdPartyNote")}</p>
