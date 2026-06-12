@@ -41,26 +41,31 @@ export function FloatingPaths({ position }: { position: number }) {
   return (
     <div className="pointer-events-none absolute inset-0">
       <svg className="h-full w-full" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMin meet">
-        {paths.map((path) => (
-          <motion.path
-            key={path.id}
-            d={path.d}
-            stroke="#c94f23"
-            strokeWidth={path.width}
-            strokeOpacity={path.opacity}
-            initial={{ pathLength: 0.3, opacity: 0.6 }}
-            animate={{
-              pathLength: 1,
-              opacity: [0.3, 0.6, 0.3],
-              pathOffset: [0, 1, 0],
-            }}
-            transition={{
-              duration: DURATIONS[path.id],
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
-        ))}
+        {/* Slow drift of the whole group conveys "flow" while every curve's
+            endpoints stay well off-screen (paths run from -380,-189 to 684,875). */}
+        <motion.g
+          initial={{ x: 0, y: 0 }}
+          animate={{ x: [0, 14 * position, 0], y: [0, 9, 0] }}
+          transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
+        >
+          {paths.map((path) => (
+            <motion.path
+              key={path.id}
+              d={path.d}
+              stroke="#c94f23"
+              strokeWidth={path.width}
+              initial={{ strokeOpacity: path.opacity }}
+              animate={{
+                strokeOpacity: [path.opacity * 0.5, path.opacity, path.opacity * 0.5],
+              }}
+              transition={{
+                duration: DURATIONS[path.id],
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
+        </motion.g>
       </svg>
     </div>
   );
