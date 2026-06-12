@@ -1,12 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 // Deterministic durations — no Math.random() to avoid SSR/client hydration mismatch
 const DURATIONS = Array.from({ length: 36 }, (_, i) => 20 + (i % 10));
 
+// The SVG scales down on narrow viewports, making the strokes thinner.
+// A small bump below the md breakpoint keeps them legible on mobile.
+const MOBILE_WIDTH_MULTIPLIER = 1.6;
 
 export function FloatingPaths({ position }: { position: number }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  const widthMul = isMobile ? MOBILE_WIDTH_MULTIPLIER : 1;
+
   const paths = Array.from({ length: 36 }, (_, i) => ({
     id: i,
     d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
@@ -16,7 +32,7 @@ export function FloatingPaths({ position }: { position: number }) {
     } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
       684 - i * 5 * position
     } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
-    width: 0.3 + i * 0.03,
+    width: (0.3 + i * 0.03) * widthMul,
     opacity: 0.05 + i * 0.016,
   }));
 
