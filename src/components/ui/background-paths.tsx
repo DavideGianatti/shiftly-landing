@@ -41,12 +41,13 @@ export function FloatingPaths({ position }: { position: number }) {
   return (
     <div className="pointer-events-none absolute inset-0">
       <svg className="h-full w-full" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMin meet">
-        {/* Slow drift of the whole group conveys "flow" while every curve's
-            endpoints stay well off-screen (paths run from -380,-189 to 684,875). */}
+        {/* The whole group drifts along the curves' diagonal so the lines
+            visibly flow, while every endpoint stays far off-screen (paths run
+            from -380,-189 to 684,875 — a ~70px drift never exposes them). */}
         <motion.g
           initial={{ x: 0, y: 0 }}
-          animate={{ x: [0, 14 * position, 0], y: [0, 9, 0] }}
-          transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
+          animate={{ x: [0, 70 * position, 0], y: [0, 44, 0] }}
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
         >
           {paths.map((path) => (
             <motion.path
@@ -56,7 +57,7 @@ export function FloatingPaths({ position }: { position: number }) {
               strokeWidth={path.width}
               initial={{ strokeOpacity: path.opacity }}
               animate={{
-                strokeOpacity: [path.opacity * 0.5, path.opacity, path.opacity * 0.5],
+                strokeOpacity: [path.opacity * 0.7, path.opacity, path.opacity * 0.7],
               }}
               transition={{
                 duration: DURATIONS[path.id],
