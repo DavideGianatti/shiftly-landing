@@ -1,12 +1,30 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 // Deterministic durations — no Math.random() to avoid SSR/client hydration mismatch
 const DURATIONS = Array.from({ length: 36 }, (_, i) => 20 + (i % 10));
 
+// Desktop fits the full coordinate space; mobile crops to a centered ~2× zoom
+// (half width × half height, same 2.2 aspect ratio) so the lines don't render
+// tiny and sub-pixel thin on narrow screens.
+const DESKTOP_VIEWBOX = "0 0 696 316";
+const MOBILE_VIEWBOX = "174 79 348 158";
+
 
 export function FloatingPaths({ position }: { position: number }) {
+  // Defaults to desktop for SSR, then switches on the client to avoid hydration mismatch.
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
   const paths = Array.from({ length: 36 }, (_, i) => ({
     id: i,
     d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
@@ -22,7 +40,7 @@ export function FloatingPaths({ position }: { position: number }) {
 
   return (
     <div className="pointer-events-none absolute inset-0">
-      <svg className="h-full w-full" viewBox="0 0 696 316" fill="none" preserveAspectRatio="xMidYMin meet">
+      <svg className="h-full w-full" viewBox={isMobile ? MOBILE_VIEWBOX : DESKTOP_VIEWBOX} fill="none" preserveAspectRatio="xMidYMin meet">
         {paths.map((path) => (
           <motion.path
             key={path.id}
