@@ -15,10 +15,10 @@
   },
   "Problem": {
     "title": "La pianificazione dei turni è ancora manuale, lenta e stressante.",
-    "description": "I team sanitari dedicano ore ogni settimana alla creazione dei turni. Gestire disponibilità, ferie, malattie e vincoli legali rende la pianificazione complessa e soggetta a errori.",
+    "description": "I team sanitari dedicano ore ogni settimana alla creazione dei turni. Gestire disponibilità, ferie, cambi turno dell'ultimo minuto e vincoli legali rende la pianificazione complessa e soggetta a errori.",
     "bullet1": "Ore perse ogni settimana nella pianificazione manuale.",
     "bullet2": "Cambiamenti dell'ultimo minuto e continui aggiustamenti.",
-    "bullet3": "Gestione stressante delle malattie.",
+    "bullet3": "Cambi turno dell'ultimo minuto stressanti.",
     "bullet4": "Rischio di errori e turni iniqui."
   },
   "Solution": {
@@ -29,8 +29,8 @@
     "title": "Pensato per la pianificazione sanitaria reale",
     "feature1Title": "Generazione automatica dei turni",
     "feature1Description": "Crea turni completi per il personale in pochi click.",
-    "feature2Title": "Gestione intelligente delle malattie",
-    "feature2Description": "Trova rapidamente i migliori sostituti quando qualcuno si ammala.",
+    "feature2Title": "Cambi turno dell'ultimo minuto intelligenti",
+    "feature2Description": "Trova rapidamente i migliori sostituti quando qualcuno deve cambiare turno.",
     "feature3Title": "Requisiti flessibili",
     "feature3Description": "Part-time, turni ricorrenti, schemi personalizzati — tutto gestito senza sforzo.",
     "feature4Title": "Pianificazione basata su regole",
@@ -39,9 +39,9 @@
     "feature5Description": "Esporta in PDF, invio automatico per email o accesso diretto all'app per il personale.",
     "feature6Title": "Autogestione del personale",
     "feature6Description": "I dipendenti possono richiedere turni specifici e scambi direttamente nell'app.",
-    "sickCallBadge": "Gestione intelligente delle malattie",
-    "sickCallTitle": "Gestisci i cambiamenti dell'ultimo minuto rapidamente",
-    "sickCallDescription": "Quando qualcuno si ammala o richiede un cambio di turno, Rosterly mostra subito chi è disponibile a coprire — così puoi risolvere in pochi click."
+    "swapBadge": "Cambi turno dell'ultimo minuto intelligenti",
+    "swapTitle": "Gestisci i cambiamenti dell'ultimo minuto rapidamente",
+    "swapDescription": "Quando qualcuno deve cambiare turno, Rosterly mostra subito chi è disponibile a coprire — così puoi risolvere in pochi click."
   },
   "Differentiation": {
     "title": "Creato da chi ha fatto davvero questo lavoro",
@@ -200,8 +200,8 @@
     "nurse8": "Paolo"
   },
   "SwapPreview": {
-    "title": "Gestisci Malattia",
-    "sickNurse": "Sara",
+    "title": "Cambio dell'ultimo minuto",
+    "swapNurse": "Sara",
     "date": "Gio 5 Mar",
     "days": "1 giorno",
     "suggestion1": "Luca",

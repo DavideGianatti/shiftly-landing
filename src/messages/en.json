@@ -15,10 +15,10 @@
   },
   "Problem": {
     "title": "Scheduling is still manual, slow, and stressful.",
-    "description": "Healthcare teams spend hours every week building staff schedules. Managing availability, vacations, sick calls and legal constraints makes scheduling complex and error-prone.",
+    "description": "Healthcare teams spend hours every week building staff schedules. Managing availability, vacations, last-minute swaps and legal constraints makes scheduling complex and error-prone.",
     "bullet1": "Hours lost every week on manual planning.",
     "bullet2": "Last-minute changes and constant adjustments.",
-    "bullet3": "Stressful sick call management.",
+    "bullet3": "Stressful last-minute swaps.",
     "bullet4": "Risk of mistakes and unfair schedules."
   },
   "Solution": {
@@ -29,8 +29,8 @@
     "title": "Built for real-world healthcare scheduling",
     "feature1Title": "Automatic schedule generation",
     "feature1Description": "Create complete staff schedules in a few clicks.",
-    "feature2Title": "Smart sick call handling",
-    "feature2Description": "Quickly find the best replacements when someone calls in sick.",
+    "feature2Title": "Smart last-minute swaps",
+    "feature2Description": "Quickly find the best replacements when someone needs to swap a shift.",
     "feature3Title": "Flexible requirements",
     "feature3Description": "Part-time schedules, recurring shifts, custom patterns — all handled seamlessly.",
     "feature4Title": "Rule-based planning",
@@ -39,9 +39,9 @@
     "feature5Description": "Export as PDF, auto-send by email, or share a live view for your team.",
     "feature6Title": "Employee self-service",
     "feature6Description": "Employees can request specific shifts and swaps directly in the app.",
-    "sickCallBadge": "Smart sick call handling",
-    "sickCallTitle": "Handle last-minute changes quickly",
-    "sickCallDescription": "When someone calls in sick or requests a shift change, Rosterly immediately shows you who's available to swap — so you can resolve it in a few clicks."
+    "swapBadge": "Smart last-minute swaps",
+    "swapTitle": "Handle last-minute changes quickly",
+    "swapDescription": "When someone needs to swap a shift, Rosterly immediately shows you who's available to cover — so you can resolve it in a few clicks."
   },
   "Differentiation": {
     "title": "Built by people who actually did the job",
@@ -200,8 +200,8 @@
     "nurse8": "Henry"
   },
   "SwapPreview": {
-    "title": "Resolve Sick Leave",
-    "sickNurse": "Diana",
+    "title": "Last-minute swap",
+    "swapNurse": "Diana",
     "date": "Thu, Mar 5",
     "days": "1 day",
     "suggestion1": "Charlie",

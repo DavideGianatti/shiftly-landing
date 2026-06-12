@@ -4,7 +4,6 @@ import {
   Moon,
   Home,
   Bed,
-  Stethoscope,
   TreePalm,
   type LucideIcon,
 } from "lucide-react";
@@ -15,7 +14,6 @@ export type ShiftCode =
   | "night"
   | "dayOff"
   | "rest"
-  | "sick"
   | "vacation";
 
 export interface ShiftStyle {
@@ -62,13 +60,6 @@ export const shiftStyles: Record<ShiftCode, ShiftStyle> = {
     icon: Bed,
     short: "R",
   },
-  sick: {
-    bg: "bg-red-50",
-    text: "text-red-600",
-    border: "border-red-200",
-    icon: Stethoscope,
-    short: "S",
-  },
   vacation: {
     bg: "bg-amber-100",
     text: "text-amber-700",
@@ -98,10 +89,10 @@ export const scheduleData: (ShiftCode | null)[][] = Array.from(
     )
 );
 
-// Swap preview: Diana (index 3) calls in sick on March 5 (day index 4, a morning)
+// Swap preview: Diana (index 3) requests a swap for her March 5 morning shift (day index 4)
 // Charlie (index 2) and Grace (index 6) both have dayOff that day — good candidates
-export const SICK_NURSE_INDEX = 3;
-export const SICK_DAY_INDEX = 4;
+export const SWAP_NURSE_INDEX = 3;
+export const SWAP_DAY_INDEX = 4;
 
 export const swapCandidateIndices = [2, 6];
 

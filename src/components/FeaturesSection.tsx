@@ -68,7 +68,7 @@ export function FeaturesSection() {
           ))}
         </motion.div>
 
-        {/* Product screenshot — sick leave feature */}
+        {/* Product screenshot — last-minute swap feature */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -79,13 +79,13 @@ export function FeaturesSection() {
           <div className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
             <div className="px-4 pt-8 pb-5 text-center sm:px-8 sm:pt-10 sm:pb-6 md:px-14">
               <p className="text-sm font-semibold uppercase tracking-widest text-coral-500">
-                {t("sickCallBadge")}
+                {t("swapBadge")}
               </p>
               <h3 className="mt-2 text-2xl font-bold text-stone-900 md:text-3xl">
-                {t("sickCallTitle")}
+                {t("swapTitle")}
               </h3>
               <p className="mt-3 text-sm sm:text-base text-stone-500 max-w-lg mx-auto">
-                {t("sickCallDescription")}
+                {t("swapDescription")}
               </p>
             </div>
             <div className="px-3 pb-4 sm:px-6 sm:pb-6 md:px-10">

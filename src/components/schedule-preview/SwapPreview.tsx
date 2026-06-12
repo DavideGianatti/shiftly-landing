@@ -7,8 +7,8 @@ import {
   shiftStyles,
   swapSuggestions,
   swapCandidateIndices,
-  SICK_NURSE_INDEX,
-  SICK_DAY_INDEX,
+  SWAP_NURSE_INDEX,
+  SWAP_DAY_INDEX,
 } from "./data";
 
 const NURSE_KEYS = ["nurse1", "nurse2", "nurse3", "nurse4", "nurse5", "nurse6", "nurse7", "nurse8"] as const;
@@ -16,10 +16,10 @@ const START_DATE = new Date(2026, 2, 1);
 
 const DAYS_IN_MONTH = 31;
 
-// Reorder nurses like the real app: sick nurse, then candidates, then dimmed rest
-const RELEVANT_SET = new Set([SICK_NURSE_INDEX, ...swapCandidateIndices]);
+// Reorder nurses like the real app: requesting nurse, then candidates, then dimmed rest
+const RELEVANT_SET = new Set([SWAP_NURSE_INDEX, ...swapCandidateIndices]);
 const orderedNurseIndices = [
-  SICK_NURSE_INDEX,
+  SWAP_NURSE_INDEX,
   ...swapCandidateIndices,
   ...Array.from({ length: 8 }, (_, i) => i).filter((i) => !RELEVANT_SET.has(i)),
 ];
@@ -51,7 +51,7 @@ export function SwapPreview() {
           <div>
             <p className="text-sm font-semibold text-stone-900">{t("title")}</p>
             <p className="text-xs text-stone-500">
-              {t("sickNurse")} &middot; {t("days")}
+              {t("swapNurse")} &middot; {t("days")}
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export function SwapPreview() {
                 &nbsp;
               </th>
               {days.map((d, i) => {
-                const isHighlightedCol = i === SICK_DAY_INDEX;
+                const isHighlightedCol = i === SWAP_DAY_INDEX;
                 return (
                   <th
                     key={i}
@@ -120,7 +120,7 @@ export function SwapPreview() {
           </thead>
           <tbody>
             {orderedNurseIndices.map((nurseIdx) => {
-              const isSickNurse = nurseIdx === SICK_NURSE_INDEX;
+              const isSwapNurse = nurseIdx === SWAP_NURSE_INDEX;
               const isDimmed = !RELEVANT_SET.has(nurseIdx);
 
               return (
@@ -130,11 +130,11 @@ export function SwapPreview() {
                 >
                   <td className="sticky left-0 z-10 bg-white border-r border-stone-200 px-0 py-0.5 whitespace-nowrap">
                     <div className="flex items-center">
-                      {/* Coral accent bar for sick nurse */}
-                      <div className={`w-1 self-stretch rounded-r ${isSickNurse ? "bg-coral-500" : "bg-transparent"}`} />
+                      {/* Coral accent bar for the requesting nurse */}
+                      <div className={`w-1 self-stretch rounded-r ${isSwapNurse ? "bg-coral-500" : "bg-transparent"}`} />
                       <span
                         className={`text-xs md:text-sm font-medium truncate block w-16 md:w-32 pl-2 ${
-                          isSickNurse ? "text-coral-900 font-semibold" : "text-stone-700"
+                          isSwapNurse ? "text-coral-900 font-semibold" : "text-stone-700"
                         }`}
                       >
                         {tSchedule(NURSE_KEYS[nurseIdx])}
@@ -151,13 +151,13 @@ export function SwapPreview() {
                     }
                     const style = shiftStyles[shift];
                     const Icon = style.icon;
-                    const isPendingSick = isSickNurse && dayIdx === SICK_DAY_INDEX;
+                    const isPendingSwap = isSwapNurse && dayIdx === SWAP_DAY_INDEX;
 
                     return (
-                      <td key={dayIdx} className={`p-px ${!isPendingSick && days[dayIdx]?.isSunday ? "bg-stone-50" : ""}`}>
+                      <td key={dayIdx} className={`p-px ${!isPendingSwap && days[dayIdx]?.isSunday ? "bg-stone-50" : ""}`}>
                         <div
                           className={`h-8 w-11 rounded border flex items-center justify-center ${
-                            isPendingSick
+                            isPendingSwap
                               ? "bg-coral-100 text-coral-900 border-coral-400 ring-2 ring-coral-500 z-10 shadow-md"
                               : `${style.bg} ${style.text} ${style.border}`
                           }`}

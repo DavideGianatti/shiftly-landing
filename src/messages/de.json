@@ -15,10 +15,10 @@
   },
   "Problem": {
     "title": "Dienstplanung ist immer noch manuell, langsam und stressig.",
-    "description": "Gesundheitsteams verbringen jede Woche Stunden mit der Erstellung von Dienstplänen. Verfügbarkeiten, Ferien, Krankmeldungen und gesetzliche Vorgaben machen die Planung komplex und fehleranfällig.",
+    "description": "Gesundheitsteams verbringen jede Woche Stunden mit der Erstellung von Dienstplänen. Verfügbarkeiten, Ferien, kurzfristige Schichttausche und gesetzliche Vorgaben machen die Planung komplex und fehleranfällig.",
     "bullet1": "Stunden gehen jede Woche für manuelle Planung verloren.",
     "bullet2": "Kurzfristige Änderungen und ständige Anpassungen.",
-    "bullet3": "Stressige Verwaltung von Krankmeldungen.",
+    "bullet3": "Stressige kurzfristige Schichttausche.",
     "bullet4": "Risiko von Fehlern und ungerechten Dienstplänen."
   },
   "Solution": {
@@ -29,8 +29,8 @@
     "title": "Entwickelt für die Realität der Gesundheitsplanung",
     "feature1Title": "Automatische Dienstplanerstellung",
     "feature1Description": "Erstellen Sie komplette Dienstpläne in wenigen Klicks.",
-    "feature2Title": "Intelligente Krankmeldungsverwaltung",
-    "feature2Description": "Finden Sie schnell die besten Ersatzkräfte, wenn sich jemand krankmeldet.",
+    "feature2Title": "Intelligente kurzfristige Schichttausche",
+    "feature2Description": "Finden Sie schnell die besten Ersatzkräfte, wenn jemand eine Schicht tauschen muss.",
     "feature3Title": "Flexible Anforderungen",
     "feature3Description": "Teilzeit, wiederkehrende Schichten, individuelle Muster — alles nahtlos berücksichtigt.",
     "feature4Title": "Regelbasierte Planung",
@@ -39,9 +39,9 @@
     "feature5Description": "Als PDF exportieren, automatisch per E-Mail senden oder den Dienstplan für alle Mitarbeiter online zugänglich machen.",
     "feature6Title": "Mitarbeiter-Selfservice",
     "feature6Description": "Mitarbeiter können Wunschschichten und Tausche direkt in der App beantragen.",
-    "sickCallBadge": "Intelligente Krankmeldungsverwaltung",
-    "sickCallTitle": "Kurzfristige Änderungen schnell bewältigen",
-    "sickCallDescription": "Wenn sich jemand krankmeldet oder einen Schichttausch beantragt, zeigt Rosterly sofort, wer verfügbar ist — so lässt sich das Problem in wenigen Klicks lösen."
+    "swapBadge": "Intelligente kurzfristige Schichttausche",
+    "swapTitle": "Kurzfristige Änderungen schnell bewältigen",
+    "swapDescription": "Wenn jemand eine Schicht tauschen muss, zeigt Rosterly sofort, wer verfügbar ist — so lässt sich das in wenigen Klicks lösen."
   },
   "Differentiation": {
     "title": "Entwickelt von Menschen, die den Job selbst gemacht haben",
@@ -200,8 +200,8 @@
     "nurse8": "Andreas"
   },
   "SwapPreview": {
-    "title": "Krankmeldung bearbeiten",
-    "sickNurse": "Katrin",
+    "title": "Kurzfristiger Tausch",
+    "swapNurse": "Katrin",
     "date": "Do, 5. Mär",
     "days": "1 Tag",
     "suggestion1": "Stefan",

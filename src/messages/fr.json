@@ -15,10 +15,10 @@
   },
   "Problem": {
     "title": "La planification est encore manuelle, lente et stressante.",
-    "description": "Les équipes de santé passent des heures chaque semaine à créer les plannings. Gérer les disponibilités, les congés, les arrêts maladie et les contraintes légales rend la planification complexe et sujette aux erreurs.",
+    "description": "Les équipes de santé passent des heures chaque semaine à créer les plannings. Gérer les disponibilités, les congés, les échanges de dernière minute et les contraintes légales rend la planification complexe et sujette aux erreurs.",
     "bullet1": "Des heures perdues chaque semaine en planification manuelle.",
     "bullet2": "Des changements de dernière minute et des ajustements constants.",
-    "bullet3": "Une gestion stressante des arrêts maladie.",
+    "bullet3": "Des échanges de dernière minute stressants.",
     "bullet4": "Un risque d'erreurs et de plannings injustes."
   },
   "Solution": {
@@ -29,8 +29,8 @@
     "title": "Conçu pour la planification de santé réelle",
     "feature1Title": "Génération automatique des plannings",
     "feature1Description": "Créez des plannings complets en quelques clics.",
-    "feature2Title": "Gestion intelligente des arrêts maladie",
-    "feature2Description": "Trouvez rapidement les meilleurs remplaçants quand quelqu'un se déclare malade.",
+    "feature2Title": "Échanges de dernière minute intelligents",
+    "feature2Description": "Trouvez rapidement les meilleurs remplaçants quand quelqu'un doit échanger sa garde.",
     "feature3Title": "Exigences flexibles",
     "feature3Description": "Temps partiels, gardes récurrentes, schémas personnalisés — tout géré sans effort.",
     "feature4Title": "Planification basée sur des règles",
@@ -39,9 +39,9 @@
     "feature5Description": "Exportez en PDF, envoi automatique par email ou donnez aux employés un accès en temps réel à leur planning.",
     "feature6Title": "Libre-service pour les employés",
     "feature6Description": "Les employés peuvent demander des gardes spécifiques et des échanges directement dans l'app.",
-    "sickCallBadge": "Gestion intelligente des arrêts maladie",
-    "sickCallTitle": "Gérez les changements de dernière minute rapidement",
-    "sickCallDescription": "Quand quelqu'un se déclare malade ou demande un échange de garde, Rosterly vous montre immédiatement qui est disponible — vous pouvez résoudre ça en quelques clics."
+    "swapBadge": "Échanges de dernière minute intelligents",
+    "swapTitle": "Gérez les changements de dernière minute rapidement",
+    "swapDescription": "Quand quelqu'un doit échanger sa garde, Rosterly vous montre immédiatement qui est disponible pour la couvrir — vous pouvez résoudre ça en quelques clics."
   },
   "Differentiation": {
     "title": "Créé par des gens qui ont vraiment fait ce travail",
@@ -200,8 +200,8 @@
     "nurse8": "Nicolas"
   },
   "SwapPreview": {
-    "title": "Gérer l'arrêt maladie",
-    "sickNurse": "Sophie",
+    "title": "Échange de dernière minute",
+    "swapNurse": "Sophie",
     "date": "Jeu 5 mars",
     "days": "1 jour",
     "suggestion1": "Claire",
